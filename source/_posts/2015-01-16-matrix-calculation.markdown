@@ -6,12 +6,12 @@ comments: true
 categories: 
 ---
 
-## Basic notations:
+### Basic notations:
 
 
 In the following descriptions, $x \in R^n $, $b \in R^n$ and $X \in
 R^{n \times n}$, $A \in R^{n \times n}$ and $f (x) \in R, f (X) \in
-R^{}$. To start, we first standardize the following basic notations:
+R^{}$. To begin with, we first standardize the following basic notations:
 
 * $$\frac{\partial (b^T x)}{\partial x} = \frac{\partial (x^T
   b)}{\partial x} = \nabla_x tr (b^{^T} x) = \nabla_x tr (b^{^{}} x^T)=b$$
@@ -20,7 +20,9 @@ R^{}$. To start, we first standardize the following basic notations:
   X^T A))}{\partial X} = \nabla_X tr (A^T X) = \nabla_X tr (A^{} X^T) = A$$
 
 
-## Another way to illustrate the basic notations:
+
+
+### Another way to illustrate the basic notations:
 
 * $$d [tr (f (x)] = tr(d(f(x)) = tr[(\nabla_x f (x))^T d x]$$
 
@@ -33,7 +35,9 @@ R^{}$. To start, we first standardize the following basic notations:
 ***
 
 
-## Chain rule:
+
+
+### Chain rule:
 
 
 
@@ -70,7 +74,10 @@ A X])}{\partial x} = (A X + X A)^T = X^T A^T + A^T X^T$$
 
 
 
-## Derivative of determinant
+
+
+### Derivative of determinant: 
+
 
 It holds that $A A^{\ast} = | A | I$ 
 where $A^{ \ast }$ 
@@ -103,7 +110,9 @@ $$\frac{\partial (\ln | A |)}{\partial A} = (A^{-
 
 
 
-## Three commonly used tricks about matrix calculation:
+
+
+### Some fundamental tricks:
 
 * $A \in S^n$, $A = U \Sigma U^T$ where $U$ is an orthogonal matrix and $A = A^{1/2} A^{1/2}$ where $A^{1/2} = U \Sigma^{1/2} U^T$;
   
