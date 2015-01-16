@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://xuhappy.github.io/sitemap.xml
