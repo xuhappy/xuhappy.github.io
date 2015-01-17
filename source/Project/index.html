@@ -1,7 +1,5 @@
 
 
-
-
 <!DOCTYPE html>
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
@@ -12,9 +10,10 @@
             <meta name="author" content="XU, Huanle">
                 
                 
-                <meta name="description" content="Blog Archive 2015 Speculative Execution for a single job in a MapReduce-like cluster
-                    Jan 16 2015 Matrix Calculation
-                    Jan 16 2015 Research about &hellip;">
+                <meta name="description" content="Blog Archive 2015 Talk something about my research
+                    Jan 17 2015 Matrix Calculation
+                    Jan 16 2015 Research about MapReduce
+                    Jan 16 2015 My Blog Love &hellip;">
                     
                     
                     <!-- http://t.co/dKP3o1e -->
@@ -23,7 +22,7 @@
                             <meta name="viewport" content="width=device-width, initial-scale=1">
                                 
                                 
-                                <link rel="canonical" href="http://hgm900611.github.io/blog/archives/">
+                                <link rel="canonical" href="http://xuhappy.github.io/blog/archives/">
                                     <link href="/favicon.png" rel="icon">
                                         <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
                                             <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -114,65 +113,66 @@
                                                         <div>
                                                         <article role="article">
                                                         
+                                                        
                                                         <header>
                                                         <h1 style="text-align:justify;" class="entry-title">Resource management and job scheduling in Cloud Computing</h1>
                                                         
                                                         </header>
                                                         
-                                                 <div id="project">
-                                                 
-                                                 <p style="text-align:justify;"> <code><strong><font style="color:red">Cloud computing has emerged as an important computing paradigm. One critical issue is to guarantee the service quality for end users. To address this problem, we design smart algorithms in cloud computing environment to improve the performance of jobs submitted by users. At present, we mainly focus on two metrics which are the job completion time and resource consumption. </font></strong></code></p>
-                                                 
-                                                 
-  
-<header>
-</header>                                                 
-  
-
-                                               <h3 id="single_job" style="text-align:justify;"><strong><font style="color:green">1. Speculative Execution for a single job in a MapReduce-like cluster</strong></font></h3>
-        
-                                      
-                                                 <p style="text-align:justify;">Parallel processing plays an important role for large-scale data analytics. It breaks a job into many small tasks which run parallel on multiple machines such as MapReduce framework. One fundamental challenge faced to such parallel processing is the straggling tasks as they can delay the completion of a job seriously.</p>
-                                                 
-                                                 <p style="text-align:justify;">In this project, we focus on the speculative execution issue which is used to deal with the straggling problem in the literature. We present a theoretical framework for the optimization of a single job which differs a lot from the previous heuristics-based work. More precisely, we propose two schemes when the number of parallel tasks the job consists of is smaller than cluster size. In the first scheme, no monitoring is needed and we can provide the job deadline guarantee with a high probability while achieve the optimal resource consumption level. The second scheme needs to monitor the task progress and makes the optimal number of duplicates when the straggling problem happens. On the other hand, when the number of tasks in a job is larger than the cluster size, we propose an Enhanced Speculative Execution (ESE) algorithm to make the optimal decision whenever a machine is available for a new scheduling. The simulation results show the ESE algorithm can reduce the job flowtime by 50% while consume fewer resources comparing to the strategy without backup.</p>
-                                                 
-                                                 
-                                                 
-                                                 <ul><div align=center><img src="model_1.jpg" height="288" width="480" alt="scheduling model" /></div></ul>
-                                              
-                                              <hr />
-                                                 
-                                                 <p><strong>Publications:</strong></p>
-                                                 
-                                                 <ul>
-                                                 <li><i><p style="text-align:justify;"><font color="#4903f5">Huanle Xu, Wing Cheong Lau, "Resource Optimization for Speculative Execution in a MapReduce Cluster," in the Procs. of IEEE ICNP, Oct 2013.</font></p></i></li>
-                                                 <li><i><p style="text-align:justify;"><font color="#4903f5">Huanle Xu, Wing Cheong Lau, "Speculative execution for a single job  in a MapReduce-like system," in IEEE Cloud, June  2014.</font></p></i></li>
-                                                 </ul>
-                                                 <hr>
-
+                                                        <div id="project">
+                                                        
+                                                        <p style="text-align:justify;"> <code><strong><font style="color:red">Cloud computing has emerged as an important computing paradigm. One critical issue is to guarantee the service quality for end users. To address this problem, we design smart algorithms in cloud computing environment to improve the performance of jobs submitted by users. At present, we mainly focus on two metrics which are the job completion time and resource consumption. </font></strong></code></p>
+                                                        
+                                                        
+                                                        
+                                                        <header>
+                                                        </header>
+                                                        
+                                                        
+                                                        <h3 id="single_job" style="text-align:justify;"><strong><font style="color:green">1. Speculative Execution for a single job in a MapReduce-like cluster</strong></font></h3>
+                                                        
+                                                        
+                                                        <p style="text-align:justify;">Parallel processing plays an important role for large-scale data analytics. It breaks a job into many small tasks which run parallel on multiple machines such as MapReduce framework. One fundamental challenge faced to such parallel processing is the straggling tasks as they can delay the completion of a job seriously.</p>
+                                                        
+                                                        <p style="text-align:justify;">In this project, we focus on the speculative execution issue which is used to deal with the straggling problem in the literature. We present a theoretical framework for the optimization of a single job which differs a lot from the previous heuristics-based work. More precisely, we propose two schemes when the number of parallel tasks the job consists of is smaller than cluster size. In the first scheme, no monitoring is needed and we can provide the job deadline guarantee with a high probability while achieve the optimal resource consumption level. The second scheme needs to monitor the task progress and makes the optimal number of duplicates when the straggling problem happens. On the other hand, when the number of tasks in a job is larger than the cluster size, we propose an Enhanced Speculative Execution (ESE) algorithm to make the optimal decision whenever a machine is available for a new scheduling. The simulation results show the ESE algorithm can reduce the job flowtime by 50% while consume fewer resources comparing to the strategy without backup.</p>
+                                                        
+                                                        
+                                                        
+                                                        <ul><div align=center><img src="model_1.jpg" height="288" width="480" alt="scheduling model" /></div></ul>
+                                                        
+                                                        <hr />
+                                                        
+                                                        <p><strong>Publications:</strong></p>
+                                                        
+                                                        <ul>
+                                                        <li><i><p style="text-align:justify;"><font color="#4903f5">Huanle Xu, Wing Cheong Lau, "Resource Optimization for Speculative Execution in a MapReduce Cluster," in the Procs. of IEEE ICNP, Oct 2013.</font></p></i></li>
+                                                        <li><i><p style="text-align:justify;"><font color="#4903f5">Huanle Xu, Wing Cheong Lau, "Speculative execution for a single job  in a MapReduce-like system," in IEEE Cloud, June  2014.</font></p></i></li>
+                                                        </ul>
+                                                        <hr>
+                                                        
                                                         
                                                         
                                                         </div>
+                                                        
                                                         
                                                         </article>
                                                         
                                                         </div>
                                                         
-                                                        
                                                         <aside class="sidebar">
                                                         
                                                         <section id="titles">
-                                                        <a href="http://hgm900611.github.io" title="My Blog"><img id="logo" src="http://hgm900611.github.io/images/favicon.png" /></a>
-                                                        <h1 id="site_title"><a href="http://hgm900611.github.io" title="My Blog">My Blog</a></h1>
+                                                        <a href="http://xuhappy.github.io" title="My Blog"><img id="logo" src="http://xuhappy.github.io/images/favicon.png" /></a>
+                                                        <h1 id="site_title"><a href="http://xuhappy.github.io" title="My Blog">My Blog</a></h1>
                                                         <h3 id="site_subtitle">Love research, love my life.</h3>
                                                         </section>
                                                         
                                                         <section id="menu">
                                                         <ul>
-                                                        <li><i class="fa fa-home fa-lg"></i><a href="http://hgm900611.github.io"> Home </a></li>
-                                                        <li><i class="fa fa-calendar fa-lg"></i><a href="http://hgm900611.github.io/blog/archives/"> Archives </a></li>
+                                                        <li><i class="fa fa-home fa-lg"></i><a href="http://xuhappy.github.io"> Home </a></li>
+                                                        <li><i class="fa fa-calendar fa-lg"></i><a href="http://xuhappy.github.io/blog/archives/"> Archives </a></li>
                                                         <li><i class="fa fa-user fa-lg"></i><a href="http://home.ie.cuhk.edu.hk/~xh112"> About </a></li>
-                                                        <li><i class="fa fa-rss fa-lg"></i><a href="http://hgm900611.github.io/Project"> Project </a></li>
+                                                        <li><i class="fa fa-rss fa-lg"></i><a href="http://xuhappy.github.io/Project"> Project </a></li>
                                                         </ul>
                                                         </section>
                                                         
@@ -273,11 +273,5 @@
                                                         
                                                         </body>
                                                         </html>
-
-
-
-
-
-
 
 
