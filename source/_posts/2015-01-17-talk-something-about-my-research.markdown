@@ -6,4 +6,6 @@ comments: true
 categories: 
 ---
 
-I am a postgraduate student and therefore research plays a very important role in my current life. 
+I am a postgraduate student and therefore research plays a very important role in my current life. My research interests mainly include cloud computing, graph algorithms and machine learning. 
+
+My first research project is motivated from the simple and heuristic-based speculative execution approach under the MapReduce framework. Since the previous work lacks the theoretical understanding, I consider to tackle this issue from the perspective of system modelling. 
