@@ -10,4 +10,4 @@ I am a postgraduate student and therefore research plays a very important role i
 
 My first research project is motivated from the simple and heuristic-based speculative execution approach under the MapReduce framework. Since the previous work lacks the theoretical understanding, I consider to tackle this issue from the perspective of system modelling. 
 
-To begin with, I build a very simple model to characterise the tradeoff between the job completion time and resource consumption under the speculative execution scheme. This is the first optimization problem I deal with. 
+To begin with, I build a very simple model to characterize the tradeoff between the job completion time and resource consumption under the speculative execution scheme. In the first optimization problem, I only consider one single job which consists of multiple tasks that can run in parallel on multiple machines. Moreover, the optimization objective is to minimize the resource consumption while satisfy the job's SLA requirement. 
