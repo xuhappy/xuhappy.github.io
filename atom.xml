@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2015-01-17T14:34:51+08:00</updated>
+  <updated>2015-02-13T11:21:10+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -153,6 +153,11 @@ is the Adjugate matrix of $A$, hence, </p>
 <p>For each issue I will make two categories which are theoretical analysis based optimization and heuristic based algorithm  design. Hope you can get something useful from this summary.</p>
 
 <hr />
+
+<h2 id="some-new-papers-related-to-mapreduce-scheduling-and-task-cloning">Some new papers related to MapReduce scheduling and task cloning</h2>
+<ul>
+  <li><a href="https://www.eecs.berkeley.edu/~apanda/papers/kmn.pdf">The Power of Choice in Data-Aware Cluster Scheduling</a> This paper </li>
+</ul>
 
 <h2 id="job-scheduling">Job Scheduling</h2>
 
