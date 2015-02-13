@@ -17,6 +17,9 @@ For each issue I will make two categories which are theoretical analysis based o
 
 ***
 
+## Some new papers related to MapReduce scheduling and task cloning
+* [The Power of Choice in Data-Aware Cluster Scheduling](https://www.eecs.berkeley.edu/~apanda/papers/kmn.pdf) This paper 
+
 ## Job Scheduling
 
 ### Theoretical Analysis based:
