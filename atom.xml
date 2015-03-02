@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2015-02-13T11:21:10+08:00</updated>
+  <updated>2015-03-02T11:24:26+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Meeting notes]]></title>
+    <link href="http://xuhappy.github.io/blog/2015/03/02/meeting-notes/"/>
+    <updated>2015-03-02T11:20:05+08:00</updated>
+    <id>http://xuhappy.github.io/blog/2015/03/02/meeting-notes</id>
+    <content type="html"><![CDATA[<h2 id="to-be-done-in-this-week">To be done in this week</h2>
+<ul>
+  <li>Two Proposals for Summer Intern </li>
+  <li>Globecom Paper </li>
+  <li>Overseas Exchange Program</li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Talk something about my research]]></title>
@@ -156,7 +170,7 @@ is the Adjugate matrix of $A$, hence, </p>
 
 <h2 id="some-new-papers-related-to-mapreduce-scheduling-and-task-cloning">Some new papers related to MapReduce scheduling and task cloning</h2>
 <ul>
-  <li><a href="https://www.eecs.berkeley.edu/~apanda/papers/kmn.pdf">The Power of Choice in Data-Aware Cluster Scheduling</a> This paper </li>
+  <li><a href="https://www.eecs.berkeley.edu/~apanda/papers/kmn.pdf">The Power of Choice in Data-Aware Cluster Scheduling</a> This paper acutally studies two problems which are speculative execution and data locality. </li>
 </ul>
 
 <h2 id="job-scheduling">Job Scheduling</h2>
