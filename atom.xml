@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2015-03-09T11:40:02+08:00</updated>
+  <updated>2015-03-09T11:44:13+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -14,15 +14,15 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Meeting notes]]></title>
+    <title type="html"><![CDATA[Meeting notes on March 2]]></title>
     <link href="http://xuhappy.github.io/blog/2015/03/02/meeting-notes/"/>
     <updated>2015-03-02T11:20:05+08:00</updated>
     <id>http://xuhappy.github.io/blog/2015/03/02/meeting-notes</id>
-    <content type="html"><![CDATA[<h2 id="to-be-done-in-this-week">To be done in this week</h2>
+    <content type="html"><![CDATA[<h2 id="to-be-done-in-this-following">To be done in this following</h2>
 <ul>
   <li>Two Proposals for Summer Intern Program</li>
-  <li>Globecom Paper </li>
-  <li>Overseas Exchange Program</li>
+  <li>Globecom Paper editing for VIES project </li>
+  <li>Prepare package for Overseas Exchange Program</li>
 </ul>
 ]]></content>
   </entry>
