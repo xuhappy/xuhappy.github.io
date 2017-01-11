@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2017-01-11T20:02:17+08:00</updated>
+  <updated>2017-01-11T20:11:35+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[welcome back]]></title>
-    <link href="http://xuhappy.github.io/blog/2017/01/11/welcome-back/"/>
+    <link href="http://xuhappy.github.io/blog/2017/01/11/Welcome-back/"/>
     <updated>2017-01-11T16:03:08+08:00</updated>
-    <id>http://xuhappy.github.io/blog/2017/01/11/welcome-back</id>
+    <id>http://xuhappy.github.io/blog/2017/01/11/Welcome-back</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
