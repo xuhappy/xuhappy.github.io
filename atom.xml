@@ -1,204 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>My Blog</title>
-  <meta name="author" content="XU, Huanle">
-
-  
-  <meta name="description" content="
-">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><![CDATA[My Blog]]></title>
+  <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
+  <link href="http://xuhappy.github.io/"/>
+  <updated>2017-01-11T18:26:39+08:00</updated>
+  <id>http://xuhappy.github.io/</id>
+  <author>
+    <name><![CDATA[XU, Huanle]]></name>
+    <email><![CDATA[xhlcuhk@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-  <link rel="canonical" href="http://xuhappy.github.io/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-   <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="My Blog" type="application/atom+xml">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
-<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
-
-
-
-
+  <entry>
+    <title type="html"><![CDATA[welcome back]]></title>
+    <link href="http://xuhappy.github.io/blog/2017/01/11/welcome-back/"/>
+    <updated>2017-01-11T16:03:08+08:00</updated>
+    <id>http://xuhappy.github.io/blog/2017/01/11/welcome-back</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
-
-  <style>html{background: url(/images/background.png) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}</style>
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-</hgroup>
-
-</header>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2017/01/11/welcome-back/">Welcome Back</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2017-01-11T16:03:08+08:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/03/09/meeting-notes-on-march-9/">Meeting Notes on March 9</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-03-09T11:46:15+08:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3 id="major-items-discussed">Major items discussed:</h3>
+  <entry>
+    <title type="html"><![CDATA[Meeting notes on March 9]]></title>
+    <link href="http://xuhappy.github.io/blog/2015/03/09/meeting-notes-on-march-9/"/>
+    <updated>2015-03-09T11:46:15+08:00</updated>
+    <id>http://xuhappy.github.io/blog/2015/03/09/meeting-notes-on-march-9</id>
+    <content type="html"><![CDATA[<h3 id="major-items-discussed">Major items discussed:</h3>
 <ul>
   <li>Prepare the package for the Overseas Exchange Program (by Tuesday) and start to contact the universities;</li>
   <li>Get started for VIES paper with Ruohan Gao on Tuesday;</li>
   <li>Give a presentation on Group meeting about my Infocom paper rehearsal and some new techniques in Convex Optimization. The time is scheduled to be Mid April. </li>
 </ul>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/03/02/meeting-notes/">Meeting Notes on March 2</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-03-02T11:20:05+08:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2 id="to-be-done-in-the-following">To be done in the following</h2>
+  <entry>
+    <title type="html"><![CDATA[Meeting notes on March 2]]></title>
+    <link href="http://xuhappy.github.io/blog/2015/03/02/meeting-notes/"/>
+    <updated>2015-03-02T11:20:05+08:00</updated>
+    <id>http://xuhappy.github.io/blog/2015/03/02/meeting-notes</id>
+    <content type="html"><![CDATA[<h2 id="to-be-done-in-the-following">To be done in the following</h2>
 <ul>
   <li>Two Proposals for Summer Intern Program</li>
   <li>Globecom Paper editing for VIES project </li>
   <li>Prepare package for Overseas Exchange Program</li>
 </ul>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/01/16/matrix-calculation/">Matrix Calculation</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-01-16T21:34:18+08:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3 id="basic-notations">Basic notations:</h3>
+  <entry>
+    <title type="html"><![CDATA[Matrix Calculation]]></title>
+    <link href="http://xuhappy.github.io/blog/2015/01/16/matrix-calculation/"/>
+    <updated>2015-01-16T21:34:18+08:00</updated>
+    <id>http://xuhappy.github.io/blog/2015/01/16/matrix-calculation</id>
+    <content type="html"><![CDATA[<h3 id="basic-notations">Basic notations:</h3>
 
 <p>In the following descriptions, $x \in R^n $, $b \in R^n$ and $X \in
 R^{n \times n}$, $A \in R^{n \times n}$ and $f (x) \in R, f (X) \in
@@ -301,42 +158,15 @@ is the Adjugate matrix of $A$, hence, </p>
   </li>
 </ul>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/01/16/research-about-mapreduce/">Research About MapReduce</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-01-16T20:06:35+08:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>In this blog, I mainly talk about three important research issues for MapReduce framework which are:</p>
+  <entry>
+    <title type="html"><![CDATA[Research about MapReduce]]></title>
+    <link href="http://xuhappy.github.io/blog/2015/01/16/research-about-mapreduce/"/>
+    <updated>2015-01-16T20:06:35+08:00</updated>
+    <id>http://xuhappy.github.io/blog/2015/01/16/research-about-mapreduce</id>
+    <content type="html"><![CDATA[<p>In this blog, I mainly talk about three important research issues for MapReduce framework which are:</p>
 
 <ul>
   <li><strong>Job scheduling for minimizing the total response time</strong></li>
@@ -444,155 +274,7 @@ Actually, the heuristic algorithm for assigning map tasks is very complex to imp
 </pre></td><td class="code"><pre><code class=""><span class="line">In our following research, we can consider to optimize 
 </span><span class="line">the job scheduling in a heterogeneous environment where
 </span><span class="line">the machines are not identical.</span></code></pre></td></tr></table></div></figure></notextile></div>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives/"> Archives </a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section id="titles">
-  <a href="http://xuhappy.github.io" title="My Blog"><img id="logo" src="http://xuhappy.github.io/images/" /></a>
-  <h1 id="site_title"><a href="http://xuhappy.github.io" title="My Blog">My Blog</a></h1>
-  <h3 id="site_subtitle">Love research, love my life.</h3>
-</section>
-
-<section id="menu">
-  <ul>
-    <li><i class="fa fa-home fa-lg"></i><a href="http://xuhappy.github.io"> Home </a></li>
-    <li><i class="fa fa-calendar fa-lg"></i><a href="http://xuhappy.github.io/blog/archives/"> Archives </a></li>
-    <li><i class="fa fa-user fa-lg"></i><a href="http://xuhappy.github.io/about/"> About </a></li>
-    <li><i class="fa fa-rss fa-lg"></i><a href="http://xuhappy.github.io/atom.xml"> Feed </a></li>
-  </ul>
-</section>
-
-<section id="social">
-  
-
-  
-
-  
-    <a href="" title="g+#110762731957011187213"><i class="fa fa-google-plus fa-2x"></i></a>
-  
-
-  
-
-  
-
-  
-</section>
-
-
-<section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2017/01/11/welcome-back/">welcome back</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/03/09/meeting-notes-on-march-9/">Meeting notes on March 9</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/03/02/meeting-notes/">Meeting notes on March 2</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/01/16/matrix-calculation/">Matrix Calculation</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/01/16/research-about-mapreduce/">Research about MapReduce</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-<section class="googleplus">
-  <h1>
-    <a href="https://plus.google.com/110762731957011187213?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-      Google+
-    </a>
-  </h1>
-</section>
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2017 - XU, Huanle -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'Comment';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-  <script type="text/javascript">
-    (function() {
-      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-      script.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-    })();
-  </script>
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>
