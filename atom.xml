@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2017-01-11T21:22:28+08:00</updated>
+  <updated>2017-01-13T11:43:05+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -119,7 +119,7 @@ A X])}{\partial x} = (A X + X A)^T = X^T A^T + A^T X^T</script>
 where $A^{ \ast }$ 
 is the Adjugate matrix of $A$, hence, </p>
 
-<script type="math/tex; mode=display">|A| = tr(A A^{\ast})</script>
+<script type="math/tex; mode=display">|A| = tr(A A^{\ast})/n</script>
 
 <p>and </p>
 
