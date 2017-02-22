@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2017-01-13T11:43:05+08:00</updated>
+  <updated>2017-02-22T16:48:11+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Lecture slides]]></title>
+    <link href="http://xuhappy.github.io/blog/2017/02/22/lecture-slides/"/>
+    <updated>2017-02-22T16:48:04+08:00</updated>
+    <id>http://xuhappy.github.io/blog/2017/02/22/lecture-slides</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Welcome back]]></title>
