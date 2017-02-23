@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2017-02-23T11:42:17+08:00</updated>
+  <updated>2017-02-23T11:44:14+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -14,13 +14,13 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Lecture slides]]></title>
+    <title type="html"><![CDATA[Lecture slides for Operation Research and Optimization]]></title>
     <link href="http://xuhappy.github.io/blog/2017/02/22/lecture-slides%20for%20Operation%20Research%20and%20Optimization/"/>
     <updated>2017-02-22T16:48:04+08:00</updated>
     <id>http://xuhappy.github.io/blog/2017/02/22/lecture-slides for Operation Research and Optimization</id>
     <content type="html"><![CDATA[<ul>
   <li>
-    <p><a href="../../../../../images/introduction.pdf">Lecture 1 – Overview: 运筹学和最优化方法</a> [posted on Feb 20]</p>
+    <p><a href="../../../../../images/Introduction.pdf">Lecture 1 – Overview: 运筹学和最优化方法</a> [posted on Feb 20]</p>
   </li>
   <li>
     <p><a href="../../../../../images/vectorANDmatrix.pdf">Lecture 2 – 向量，矩阵，子空间</a> [posted on Feb 22]</p>
