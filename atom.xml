@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2017-02-23T11:44:14+08:00</updated>
+  <updated>2017-02-27T01:12:01+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -25,7 +25,11 @@
   <li>
     <p><a href="../../../../../images/vectorANDmatrix.pdf">Lecture 2 – 向量，矩阵，子空间</a> [posted on Feb 22]</p>
   </li>
+  <li>
+    <p><a href="../../../../../images/ElementsOfLP.pdf">Lecture 3 – 线性规划的基本概念与理论</a> [posted on Feb 26】</p>
+  </li>
 </ul>
+
 ]]></content>
   </entry>
   
