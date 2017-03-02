@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2017-03-01T14:53:35+08:00</updated>
+  <updated>2017-03-02T09:34:04+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -14,11 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Lecture slides for Operation Research and Optimization]]></title>
+    <title type="html"><![CDATA[Operation Research and Optimization]]></title>
     <link href="http://xuhappy.github.io/blog/2017/02/22/lecture-slides%20for%20Operation%20Research%20and%20Optimization/"/>
     <updated>2017-02-22T16:48:04+08:00</updated>
     <id>http://xuhappy.github.io/blog/2017/02/22/lecture-slides for Operation Research and Optimization</id>
-    <content type="html"><![CDATA[<h2 id="lecture-slides">Lecture slides</h2>
+    <content type="html"><![CDATA[<h3 id="lecture-slides">Lecture slides</h3>
 
 <ul>
   <li>
@@ -35,7 +35,7 @@
   </li>
 </ul>
 
-<h2 id="announcements">Announcements</h2>
+<h3 id="announcements">Announcements</h3>
 
 <ul>
   <li>There will be no class in the third week (From March 6-8).</li>
