@@ -1,0 +1,28 @@
+# jemdoc: menu{MENU}{publication.html}
+=  Huanle Xu - Publications
+
+
+#== Working Paper 	
+# . *Huanle Xu*, 	Gustavo de Veciana and Wing Cheong Lau, "Addressing Job Processing Variability Through Redundant Execution and Opportunistic Checkpointing:  A Competitive Analysis".
+
+#[papers/variability.pdf \[pdf\]]
+
+
+== Journal Paper
+. *Huanle Xu* and Wing Cheong lau, "Optimization for Speculative Execution in Big
+Data Processing Clusters", in IEEE Transactions on Parallel and Distributed Systems (TPDS), accepted for publication, May 2016. 
+ 	
+== Conference Paper
+. *Huanle Xu*, Gustavo de Veciana and Wing Cheong Lau, ''Addressing Job Processing Variability Through Redundant Execution and Opportunistic Checkpointing:  A Competitive Analysis'', to appear in IEEE Infocom 2017. 
+. Ruhan Gao, *Huanle Xu*, Pili Hu and Wing Cheong lau, "Accelerating Graph Mining Algorithms via Uniform Random Edge Sampling", in the Procs. of IEEE ICC, May 2016. [papers/GraphSampling_fullversion.pdf \[pdf\]]
+. *Huanle Xu*, Ronghai Yang, Zhibo Yang and Wing Cheong Lau, "Solving Large Graph Problems in MapReduce-Like Frameworks via Optimized Parameter Configuration", in the Procs. of IEEE ICA3PP (the 15th International Conference on Algorithms and Architectures for Parallel Processing), Nov 2015.  [papers/Graph_problem.pdf \[pdf\]]
+. *Huanle Xu* and Wing Cheong Lau, "Task-Cloning Algorithms in a MapReduce Cluster with Competitive Performance Bounds", in the Procs. of IEEE ICDCS, 2015.  [papers/ICDCS2015.pdf \[pdf\]]
+. *Huanle Xu*, Pili Hu, Wing Cheong Lau, Qiming Zhang and Yang Wu, "DPCP: A Protocol for Optimal Pull Coordination in Decentralized Social Networks", in the Procs. of IEEE Infocom, Apr 2015. [papers/DSN15.pdf \[pdf\]]
+. *Huanle Xu* and Wing Cheong Lau, "Optimization For Speculative Execution In a Map-Reduce-Like Cluster", in the Procs. of IEEE Infocom, Apr 2015. [papers/InfcomScheduling15.pdf \[pdf\]]
+. Kenneth  Shum,  Hanxu Hou, Minghua Chen, *Huanle Xu* and Hui Li, "Regenerating Codes  Over a Binary Cyclic Code", in the Procs. of ISIT, June 2014. [papers/ISIT14.pdf \[pdf\]] 
+. *Huanle Xu* and Wing Cheong Lau, "Speculative Execution for a Single Job  in a MapReduce-Like System," in the Procs. of IEEE Cloud, June  2014. [papers/Cloud14.pdf \[pdf\]]
+. *Huanle Xu* and Wing Cheong Lau, "Resource Optimization for Speculative Execution in a MapReduce Cluster," in the Procs. of IEEE ICNP, Oct 2013. [http://home.ie.cuhk.edu.hk/~xh112 \[pdf\]]
+
+
+== Poster Paper
+. Ruhan Gao, *Huanle Xu*, Pili Hu and Wing Cheong lau, "Accelerating Graph Mining Algorithms via Uniform Random Edge Sampling", in COSN, November 2015. 

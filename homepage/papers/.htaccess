@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "IEMS5709 Advanced Topics in Information Processing — Big Data Systems and Information Processing"
+AuthUserFile "../.htpasswd"
+Require user hxhou
