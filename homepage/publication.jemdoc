@@ -9,6 +9,7 @@
 
 
 == Journal Paper
+. *Huanle Xu*, Wing Cheong Lau, Zhibo Yang, Gustavo de Veciana and Hanxu Hou, "Mitigating Service Variability in MapReduce Clusters via Task Cloning: A Competitive Analysis", in IEEE Transactions on Parallel and Distributed Systems (TPDS), accepted for Publication, March 2017. 
 . *Huanle Xu* and Wing Cheong lau, "Optimization for Speculative Execution in Big
 Data Processing Clusters", in IEEE Transactions on Parallel and Distributed Systems (TPDS), accepted for publication, May 2016. 
  	
