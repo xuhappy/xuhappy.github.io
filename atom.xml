@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2017-04-09T23:44:14+08:00</updated>
+  <updated>2017-04-09T23:46:46+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -37,7 +37,7 @@
     <p><a href="../../../../../images/LP3.pdf">Lecture 4 – 线性规划的标准形式</a> [posted on Mar 15】</p>
   </li>
   <li><a href="../../../../../images/ConvexOptimizationBasics1.pdf">Lecture 5 – 凸函数</a> [posted on Mar 27】</li>
-  <li><a href="../../../../../images/ConvexUnconstrained1.pdf">Lecture 6 – 无约束条件的凸优化</a> [posted on Apr 1】</li>
+  <li><a href="../../../../../images/ConvexUnconstrained9.pdf">Lecture 6 – 无约束条件的凸优化</a> [updated</li>
 </ul>
 
 <h3 id="announcements">Announcements</h3>
