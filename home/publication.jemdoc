@@ -14,7 +14,7 @@
 Data Processing Clusters", in IEEE Transactions on Parallel and Distributed Systems (TPDS), Vol.28, Issue 2, Feb 2017. [papers/TPDS2016.pdf \[pdf\]]
  	
 == Conference Paper
-. *Huanle Xu*, Gustavo de Veciana and Wing Cheong Lau, ''Addressing Job Processing Variability Through Redundant Execution and Opportunistic Checkpointing:  A Competitive Analysis'', to appear in IEEE Infocom 2017. 
+. *Huanle Xu*, Gustavo de Veciana and Wing Cheong Lau, ''Addressing Job Processing Variability Through Redundant Execution and Opportunistic Checkpointing:  A Competitive Analysis'', in the Procs. of IEEE Infocom, May 2017. [papers/variability_single_job.pdf \[pdf\]]
 . Ruhan Gao, *Huanle Xu*, Pili Hu and Wing Cheong lau, "Accelerating Graph Mining Algorithms via Uniform Random Edge Sampling", in the Procs. of IEEE ICC, May 2016. [papers/GraphSampling_fullversion.pdf \[pdf\]]
 . *Huanle Xu*, Ronghai Yang, Zhibo Yang and Wing Cheong Lau, "Solving Large Graph Problems in MapReduce-Like Frameworks via Optimized Parameter Configuration", in the Procs. of IEEE ICA3PP (the 15th International Conference on Algorithms and Architectures for Parallel Processing), Nov 2015.  [papers/Graph_problem.pdf \[pdf\]]
 . *Huanle Xu* and Wing Cheong Lau, "Task-Cloning Algorithms in a MapReduce Cluster with Competitive Performance Bounds", in the Procs. of IEEE ICDCS, 2015.  [papers/ICDCS2015.pdf \[pdf\]]
