@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2017-06-02T15:38:26+08:00</updated>
+  <updated>2017-06-02T15:56:17+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -65,10 +65,17 @@ on Apr 9]</li>
 
 <h3 id="project">Project</h3>
 <ul>
-  <li>SVM for Handwritten Digits Classification. Dataset is available on <a href="http://yann.lecun.com/exdb/mnist/">THE MNIST DATABASE</a>. You need to:
+  <li>SVM for Handwritten Digits Classification. Dataset is available on <a href="http://yann.lecun.com/exdb/mnist/">THE MNIST DATABASE</a>. In this project, you need to:
     <ol>
       <li>Apply the basic SVM model to train the training set and classify the digits in the test set.</li>
       <li>Use kernel method to retrain the SVM model and classify the digits. </li>
+    </ol>
+  </li>
+  <li>K-means for image clustering. Dataset is available on <a href="http://yann.lecun.com/exdb/mnist/">THE MNIST DATABASE</a>. In this project, you need to:
+    <ol>
+      <li>Combine the both the training set and test set into one set and randomly pick 50000 images. </li>
+      <li>Use K-means to cluster the images you have chosen in Step 1 into 10 different classes and compute the error rate using the ground truth. </li>
+      <li>Apply Fuzz C-means method in <a href="https://xuhappy.github.io/images/Ref_1_1_cancerous.pdf">C-means</a> to cluster the images you have chosen in Step 1 into 10 different classes and compute the error rate using the ground truth. Compare the result with that of Step 2. </li>
     </ol>
   </li>
 </ul>
