@@ -31,59 +31,39 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://xuhappy.github.io/blog/gallery/</loc>
-    <lastmod>2017-06-16T13:53:26+08:00</lastmod>
+    <loc>http://xuhappy.github.io/blog/archives/</loc>
+    <lastmod>2017-08-24T14:51:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://xuhappy.github.io/</loc>
-    <lastmod>2017-06-16T13:53:26+08:00</lastmod>
+    <lastmod>2017-08-24T14:51:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://xuhappy.github.io/archives/</loc>
-    <lastmod>2017-06-16T13:53:26+08:00</lastmod>
+    <lastmod>2017-08-24T14:51:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://xuhappy.github.io/blog/archives/</loc>
-    <lastmod>2017-06-16T13:53:26+08:00</lastmod>
+    <loc>http://xuhappy.github.io/blog/gallery/</loc>
+    <lastmod>2017-08-24T14:51:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://xuhappy.github.io/about/</loc>
-    <lastmod>2017-06-16T13:53:26+08:00</lastmod>
+    <lastmod>2017-08-24T14:51:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://xuhappy.github.io/project/</loc>
-    <lastmod>2017-06-16T13:53:26+08:00</lastmod>
+    <lastmod>2017-08-24T14:51:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>http://xuhappy.github.io/home/biography.html</loc>
-    <lastmod>2017-03-30T15:29:34+08:00</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>http://xuhappy.github.io/home/course.html</loc>
-    <lastmod>2016-12-20T16:47:30+08:00</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>http://xuhappy.github.io/home/index.html</loc>
-    <lastmod>2017-03-30T15:34:36+08:00</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>http://xuhappy.github.io/home/publication.html</loc>
-    <lastmod>2017-05-16T11:49:50+08:00</lastmod>
-    <priority>0.6</priority>
   </url>
 </urlset>
