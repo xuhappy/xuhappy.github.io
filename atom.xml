@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2017-08-24T14:51:07+08:00</updated>
+  <updated>2017-09-04T18:34:59+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Numerical Computation Methods]]></title>
+    <link href="http://xuhappy.github.io/blog/2017/09/04/numerical-computation-methods/"/>
+    <updated>2017-09-04T18:33:58+08:00</updated>
+    <id>http://xuhappy.github.io/blog/2017/09/04/numerical-computation-methods</id>
+    <content type="html"><![CDATA[<h3 id="lecture-slides">Lecture slides</h3>
+
+<ul>
+  <li><a href="../../../../../images/Num_Introduction.pdf">Lecture 1 – Overview: 数值计算方法</a> [posted on Sep 4]</li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Operation Research and Optimization]]></title>
