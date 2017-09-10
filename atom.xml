@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2017-09-04T18:37:00+08:00</updated>
+  <updated>2017-09-10T18:29:46+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -21,7 +21,12 @@
     <content type="html"><![CDATA[<h3 id="lecture-slides">Lecture slides</h3>
 
 <ul>
-  <li><a href="../../../../../images/Num_introduction.pdf">Lecture 1 – Overview: 数值计算方法</a> [posted on Sep 4]</li>
+  <li>
+    <p><a href="../../../../../images/Num_introduction.pdf">Lecture 1 – Overview: 数值计算方法</a> [posted on Sep 4]</p>
+  </li>
+  <li>
+    <p><a href="../../../../../images/vectorANDmatrix.pdf">Lecture 2 – 向量，矩阵，子空间</a> [posted on Sep 10]</p>
+  </li>
 </ul>
 ]]></content>
   </entry>
