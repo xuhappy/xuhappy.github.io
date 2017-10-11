@@ -36,38 +36,38 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://xuhappy.github.io/blog/archives/</loc>
-    <lastmod>2017-09-18T16:19:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>http://xuhappy.github.io/</loc>
-    <lastmod>2017-09-18T16:19:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>http://xuhappy.github.io/archives/</loc>
-    <lastmod>2017-09-18T16:19:32+08:00</lastmod>
+    <lastmod>2017-10-11T11:07:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://xuhappy.github.io/blog/gallery/</loc>
-    <lastmod>2017-09-18T16:19:32+08:00</lastmod>
+    <lastmod>2017-10-11T11:07:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>http://xuhappy.github.io/blog/archives/</loc>
+    <lastmod>2017-10-11T11:07:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://xuhappy.github.io/</loc>
+    <lastmod>2017-10-11T11:07:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>http://xuhappy.github.io/about/</loc>
-    <lastmod>2017-09-18T16:19:32+08:00</lastmod>
+    <lastmod>2017-10-11T11:07:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://xuhappy.github.io/project/</loc>
-    <lastmod>2017-09-18T16:19:32+08:00</lastmod>
+    <lastmod>2017-10-11T11:07:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
