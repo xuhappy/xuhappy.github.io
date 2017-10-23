@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2017-10-11T11:36:39+08:00</updated>
+  <updated>2017-10-23T15:08:55+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -29,6 +29,12 @@
   </li>
   <li>
     <p><a href="../../../../../images/equation.pdf">Lecture 3 – 非线性方程数值解</a> [posted on Sep 25]</p>
+  </li>
+  <li>
+    <p><a href="../../../../../images/ConvexOptimizationBasics1.pdf">Lecture 4 – 凸函数</a> [posted on Oct 23]</p>
+  </li>
+  <li>
+    <p><a href="../../../../../images/ConvexUnconstrained1.pdf">Lecture 5 – 凸优化1</a> [posted on Oct 23]</p>
   </li>
 </ul>
 ]]></content>
