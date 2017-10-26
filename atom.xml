@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2017-10-23T15:08:55+08:00</updated>
+  <updated>2017-10-26T15:21:32+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -36,6 +36,12 @@
   <li>
     <p><a href="../../../../../images/ConvexUnconstrained1.pdf">Lecture 5 – 凸优化1</a> [posted on Oct 23]</p>
   </li>
+</ul>
+
+<h3 id="homework">Homework</h3>
+
+<ul>
+  <li><a href="../../../../../images/作业1.pdf">Homework 1</a> [posted on Oct 26] </li>
 </ul>
 ]]></content>
   </entry>
