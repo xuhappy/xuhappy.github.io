@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2017-11-27T15:46:33+08:00</updated>
+  <updated>2017-12-18T13:37:42+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -41,6 +41,19 @@
   </li>
   <li>
     <p><a href="../../../../../images/SVM.pdf">Lecture 7 – 支持向量机(SVM)</a> [posted on Nov 27]</p>
+  </li>
+  <li>
+    <p><a href="../../../../../images/Clustering.pdf">Lecture 8 – Clustering</a> [posted on Dec 18]</p>
+  </li>
+</ul>
+
+<h3 id="project">Project</h3>
+<ul>
+  <li>SVM for Handwritten Digits Classification. Dataset is available on <a href="http://yann.lecun.com/exdb/mnist/">THE MNIST DATABASE</a>. In this project, you need to:
+    <ol>
+      <li>Apply the basic SVM model to train the training set and classify the digits in the test set.</li>
+      <li>Use kernel method to retrain the SVM model and classify the digits. </li>
+    </ol>
   </li>
 </ul>
 
