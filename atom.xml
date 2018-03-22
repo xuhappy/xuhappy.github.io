@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2018-03-21T22:19:31+08:00</updated>
+  <updated>2018-03-22T15:51:35+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -77,53 +77,19 @@
     <p><a href="../../../../../images/Introduction.pdf">Lecture 1 – Overview: 运筹学和最优化方法</a> [posted on March 5]</p>
   </li>
   <li>
-    <p><a href="../../../../../images/vectorANDmatrix.pdf">Lecture 2 – 向量，矩阵，子空间</a> [posted on Feb 22]</p>
+    <p><a href="../../../../../images/vectorANDmatrix.pdf">Lecture 2 – 向量，矩阵，子空间</a> [posted on March 12]</p>
   </li>
   <li>
-    <p><a href="../../../../../images/ElementsOfLP.pdf">Lecture 3 – 线性规划的基本概念与理论</a> [posted on Feb 26】</p>
+    <p><a href="../../../../../images/ElementsOfLP.pdf">Lecture 3 – 线性规划的基本概念与理论</a> [posted on March 19】</p>
   </li>
   <li>
-    <p><a href="../../../../../images/ElementsOfLP2.pdf">Lecture 3 (supplementary) – 线性规划的基本概念与理论(2)</a> [posted on Feb 26】</p>
+    <p><a href="../../../../../images/LP3.pdf">Lecture 4 – 线性规划的标准形式</a> [posted on Mar 19】</p>
   </li>
-  <li>
-    <p><a href="../../../../../images/LP3.pdf">Lecture 4 – 线性规划的标准形式</a> [posted on Mar 15】</p>
-  </li>
-  <li><a href="../../../../../images/ConvexOptimizationBasics1.pdf">Lecture 5 – 凸函数</a> [posted on Mar 27】</li>
-  <li><a href="../../../../../images/ConvexUnconstrained1.pdf">Lecture 6 – 无约束条件的凸优化</a> [updated
-on Apr 9]</li>
-  <li><a href="../../../../../images/LipschitzConvexFunctions.pdf">Lecture 7 – 无约束条件的凸优化二</a> [posted on Apr 16]</li>
-  <li><a href="../../../../../images/strongly_convex.pdf">Lecture 8 – 无约束条件的凸优化三</a> [posted on Apr 18]</li>
-  <li><a href="../../../../../images/ConstrainedConvexOptimization.pdf">Lecture 9 – 含约束条件的凸优化一</a> [posted on Apr 23]</li>
-  <li><a href="../../../../../images/ConstrainedDualityTheory.pdf">Lecture 10 – 含约束条件的下的对偶理论</a> [posted on May 6]</li>
-  <li><a href="../../../../../images/DualApproach.pdf">Lecture 11 – Dual Approach</a> [posted on May 14]</li>
-  <li><a href="../../../../../images/SVM.pdf">Lecture 12 – SVM</a> [posted on May 20]</li>
-  <li><a href="../../../../../images/Clustering.pdf">Lecture 13 – Clustering</a> [posted on May 26]</li>
-  <li><a href="../../../../../images/OnlineOptimization.pdf">Lecture 14 – Online Optimization</a> [posted on May 30]</li>
-</ul>
-
-<h3 id="announcements">Announcements</h3>
-
-<ul>
-  <li>There will be no class in the third week (From March 6-8).</li>
 </ul>
 
 <h3 id="homework">Homework</h3>
-
-<h3 id="project-imagesprojectpdf">Project <a href="../../../../../images/project.pdf">分组情况</a></h3>
 <ul>
-  <li>SVM for Handwritten Digits Classification. Dataset is available on <a href="http://yann.lecun.com/exdb/mnist/">THE MNIST DATABASE</a>. In this project, you need to:
-    <ol>
-      <li>Apply the basic SVM model to train the training set and classify the digits in the test set.</li>
-      <li>Use kernel method to retrain the SVM model and classify the digits. </li>
-    </ol>
-  </li>
-  <li>K-means for image clustering. Dataset is available on <a href="http://yann.lecun.com/exdb/mnist/">THE MNIST DATABASE</a>. In this project, you need to:
-    <ol>
-      <li>Combine both the training set and test set into one set and randomly pick 50000 images. </li>
-      <li>Use K-means to cluster the images you have chosen in Step 1 into 10 different classes and compute the error rate using the ground truth. </li>
-      <li>Apply Fuzz C-means method in <a href="https://xuhappy.github.io/images/Ref_1_1_cancerous.pdf">C-means</a> to cluster the images you have chosen in Step 1 into 10 different classes and compute the error rate using the ground truth. Compare the result with that of Step 2. </li>
-    </ol>
-  </li>
+  <li><a href="../../../../../images/Homework1.pdf">Homework 1</a></li>
 </ul>
 
 ]]></content>
