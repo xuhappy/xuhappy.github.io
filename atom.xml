@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2018-04-16T20:32:22+08:00</updated>
+  <updated>2018-04-24T08:29:07+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -90,6 +90,9 @@
   </li>
   <li>
     <p><a href="../../../../../images/SVM.pdf">Lecture 6 – 支持向量机(SVM)</a> [posted on Apr 16]</p>
+  </li>
+  <li>
+    <p><a href="../../../../../images/ConvexUnconstrained1.pdf">Lecture 7 – 无约束条件的凸优化</a> [posted on Apr 23]</p>
   </li>
 </ul>
 
