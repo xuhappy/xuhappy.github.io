@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2018-05-09T19:52:21+08:00</updated>
+  <updated>2018-05-14T15:44:03+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -98,6 +98,8 @@
     <p><a href="../../../../../images/LipschitzConvexFunctions.pdf">Lecture 8 – 无约束条件的凸优化二</a> [posted on May 9]</p>
   </li>
 </ul>
+
+<p><a href="../../../../../images/strong_convex.pdf">Lecture 9 – 无约束条件的凸优化三</a> [posted on May 14]</p>
 
 <h3 id="homework">Homework</h3>
 <ul>
