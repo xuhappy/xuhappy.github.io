@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2018-05-24T12:41:37+08:00</updated>
+  <updated>2018-06-04T22:05:05+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -105,6 +105,9 @@
   </li>
   <li>
     <p><a href="../../../../../images/ConstrainedDualityTheory.pdf">Lecture 11 – 含约束条件的下的对偶理论</a> [posted on May 21]</p>
+  </li>
+  <li>
+    <p><a href="../../../../../images/Clustering.pdf">Lecture 12 – Clustering</a> [posted on June 4]</p>
   </li>
 </ul>
 
