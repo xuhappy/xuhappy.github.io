@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2018-06-13T16:49:08+08:00</updated>
+  <updated>2018-06-15T17:03:16+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -14,62 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Numerical Computation Methods]]></title>
-    <link href="http://xuhappy.github.io/blog/2017/09/04/numerical-computation-methods/"/>
-    <updated>2017-09-04T18:33:58+08:00</updated>
-    <id>http://xuhappy.github.io/blog/2017/09/04/numerical-computation-methods</id>
-    <content type="html"><![CDATA[<h3 id="lecture-slides">Lecture slides</h3>
-
-<ul>
-  <li>
-    <p><a href="../../../../../images/Num_introduction.pdf">Lecture 1 – Overview: 数值计算方法</a> [posted on Sep 4]</p>
-  </li>
-  <li>
-    <p><a href="../../../../../images/vectorANDmatrix.pdf">Lecture 2 – 向量，矩阵，子空间</a> [posted on Sep 10]</p>
-  </li>
-  <li>
-    <p><a href="../../../../../images/equation.pdf">Lecture 3 – 非线性方程数值解</a> [posted on Sep 25]</p>
-  </li>
-  <li>
-    <p><a href="../../../../../images/ConvexOptimizationBasics1.pdf">Lecture 4 – 凸函数</a> [posted on Oct 23]</p>
-  </li>
-  <li>
-    <p><a href="../../../../../images/ConvexUnconstrained1.pdf">Lecture 5 – 凸优化1</a> [posted on Oct 23]</p>
-  </li>
-  <li>
-    <p><a href="../../../../../images/LipschitzConvexFunctions.pdf">Lecture 6 – 无约束条件的凸优化二</a> [posted on Nov 20]</p>
-  </li>
-  <li>
-    <p><a href="../../../../../images/SVM.pdf">Lecture 7 – 支持向量机(SVM)</a> [posted on Nov 27]</p>
-  </li>
-  <li>
-    <p><a href="../../../../../images/Clustering.pdf">Lecture 8 – Clustering</a> [posted on Dec 18]</p>
-  </li>
-</ul>
-
-<h3 id="project">Project</h3>
-<ul>
-  <li>SVM for Handwritten Digits Classification. Dataset is available on <a href="http://yann.lecun.com/exdb/mnist/">THE MNIST DATABASE</a>. In this project, you need to:
-    <ol>
-      <li>Apply the basic SVM model to train the training set and classify the digits in the test set.</li>
-      <li>Use kernel method to retrain the SVM model and classify the digits. </li>
-    </ol>
-  </li>
-</ul>
-
-<h3 id="homework">Homework</h3>
-
-<ul>
-  <li><a href="../../../../../images/作业1.pdf">Homework 1</a> [posted on Oct 26] </li>
-</ul>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Operation Research and Optimization (2018 Spring)]]></title>
-    <link href="http://xuhappy.github.io/blog/2017/02/22/lecture-slides%20for%20Operation%20Research%20and%20Optimization/"/>
-    <updated>2017-02-22T16:48:04+08:00</updated>
-    <id>http://xuhappy.github.io/blog/2017/02/22/lecture-slides for Operation Research and Optimization</id>
+    <link href="http://xuhappy.github.io/blog/2018/02/22/lecture-slides%20for%20Operation%20Research%20and%20Optimization/"/>
+    <updated>2018-02-22T16:48:04+08:00</updated>
+    <id>http://xuhappy.github.io/blog/2018/02/22/lecture-slides for Operation Research and Optimization</id>
     <content type="html"><![CDATA[<h3 id="lecture-slides">Lecture slides</h3>
 
 <ul>
@@ -89,31 +37,28 @@
     <p><a href="../../../../../images/ConvexOptimizationBasics1.pdf">Lecture 5 – 凸函数</a> [posted on Apr 2】</p>
   </li>
   <li>
-    <p><a href="../../../../../images/SVM.pdf">Lecture 6 – 支持向量机(SVM)</a> [posted on Apr 16]</p>
+    <p><a href="../../../../../images/ConvexUnconstrained1.pdf">Lecture 6 – 无约束条件的凸优化一</a> [posted on Apr 23]</p>
   </li>
   <li>
-    <p><a href="../../../../../images/ConvexUnconstrained1.pdf">Lecture 7 – 无约束条件的凸优化</a> [posted on Apr 23]</p>
+    <p><a href="../../../../../images/LipschitzConvexFunctions.pdf">Lecture 7 – 无约束条件的凸优化二</a> [posted on May 9]</p>
   </li>
   <li>
-    <p><a href="../../../../../images/LipschitzConvexFunctions.pdf">Lecture 8 – 无约束条件的凸优化二</a> [posted on May 9]</p>
+    <p><a href="../../../../../images/strong_convex.pdf">Lecture 8 – 无约束条件的凸优化三</a> [posted on May 14]</p>
   </li>
   <li>
-    <p><a href="../../../../../images/strong_convex.pdf">Lecture 9 – 无约束条件的凸优化三</a> [posted on May 14]</p>
+    <p><a href="../../../../../images/SVM.pdf">Lecture 9 – 支持向量机(SVM)</a> [posted on Apr 16]</p>
   </li>
   <li>
     <p><a href="../../../../../images/ConstrainedConvexOptimization.pdf">Lecture 10 – 含约束条件的凸优化一</a> [posted on May 16]</p>
   </li>
   <li>
-    <p><a href="../../../../../images/ConstrainedDualityTheory.pdf">Lecture 11 – 含约束条件的下的对偶理论</a> [posted on May 21]</p>
+    <p><a href="../../../../../images/ConstrainedDualityTheory.pdf">Lecture 11 – 含约束条件下的对偶理论</a> [posted on May 21]</p>
   </li>
   <li>
-    <p><a href="../../../../../images/Clustering.pdf">Lecture 12 – Clustering</a> [posted on June 4]</p>
+    <p><a href="../../../../../images/IntroductiotoNeuralNetworks.pdf">Lecture 12 – Introduction to Neural Networks</a> [posted on June 11]</p>
   </li>
   <li>
-    <p><a href="../../../../../images/IntroductiotoNeuralNetworks.pdf">Lecture 13 – Introduction to Neural Networks</a> [posted on June 11]</p>
-  </li>
-  <li>
-    <p><a href="../../../../../images/OnlineOptimization.pdf">Lecture 14 – Online Optimization</a> [posted on June 13]</p>
+    <p><a href="../../../../../images/OnlineOptimization.pdf">Lecture 13 – Online Optimization</a> [posted on June 13]</p>
   </li>
 </ul>
 
