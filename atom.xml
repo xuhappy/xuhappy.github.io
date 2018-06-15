@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2018-06-15T17:03:16+08:00</updated>
+  <updated>2018-06-15T17:11:05+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -84,34 +84,6 @@
     <updated>2017-01-11T21:21:26+08:00</updated>
     <id>http://xuhappy.github.io/blog/2017/01/11/welcome-back</id>
     <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Meeting notes on March 9]]></title>
-    <link href="http://xuhappy.github.io/blog/2015/03/09/meeting-notes-on-march-9/"/>
-    <updated>2015-03-09T11:46:15+08:00</updated>
-    <id>http://xuhappy.github.io/blog/2015/03/09/meeting-notes-on-march-9</id>
-    <content type="html"><![CDATA[<h3 id="major-items-discussed">Major items discussed:</h3>
-<ul>
-  <li>Prepare the package for the Overseas Exchange Program (by Tuesday) and start to contact the universities;</li>
-  <li>Get started for VIES paper with Ruohan Gao on Tuesday;</li>
-  <li>Give a presentation on Group meeting about my Infocom paper rehearsal and some new techniques in Convex Optimization. The time is scheduled to be Mid April. </li>
-</ul>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Meeting notes on March 2]]></title>
-    <link href="http://xuhappy.github.io/blog/2015/03/02/meeting-notes/"/>
-    <updated>2015-03-02T11:20:05+08:00</updated>
-    <id>http://xuhappy.github.io/blog/2015/03/02/meeting-notes</id>
-    <content type="html"><![CDATA[<h2 id="to-be-done-in-the-following">To be done in the following</h2>
-<ul>
-  <li>Two Proposals for Summer Intern Program</li>
-  <li>Globecom Paper editing for VIES project </li>
-  <li>Prepare package for Overseas Exchange Program</li>
-</ul>
 ]]></content>
   </entry>
   
