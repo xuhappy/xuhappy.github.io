@@ -3,8 +3,8 @@
 	<channel>
 		<title>Big Data Analytics</title>
 		<description>Big Data Analytics</description>
-		<link>http://mobitec.ie.cuhk.edu.hk/iems5709Fall2016</link>
-		<atom:link href="http://mobitec.ie.cuhk.edu.hk/iems5709Fall2016/feed.xml" rel="self" type="application/rss+xml" />
+		<link>https://xuhappy.github.io/courses/BigData</link>
+		<atom:link href="https://xuhappy.github.io/courses/BigData/feed.xml" rel="self" type="application/rss+xml" />
 		
 	</channel>
 </rss>
