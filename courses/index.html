@@ -9,7 +9,7 @@
   <meta name="author" content="XU, Huanle">
 
   
-  <meta name="description" content="Courses Cloud computing has become a important comuting paradigm and the critical issue is the service quality. In this way, we aim to design smart &hellip;">
+  <meta name="description" content="Courses Teaching in DGUT Big Data Analytics [2018 Fall】 Teaching in CUHK ENGG 2030 Signal and Systems [2012 Fall] IERG 3090 Advanced Internet &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -87,28 +87,7 @@
 <time datetime="2017-01-11T00:00:00+08:00" pubdate data-updated="true"></time></p>
   </header>
   
-  <p><code>Cloud computing has become a important comuting paradigm and the critical issue is the service quality. In this way, we aim to design smart algorithms in cloud computing environment so as to improve the job performance. At present, we mainly focus on two metrics of job which are completion time and resource consumption. To achieve this two goals, we consider two factors to optimize including speculative execution and data locality.</code></p>
-
-<h3 id="speculative-execution-for-a-single-job-in-a-mapreduce-like-cluster">1. Speculative Execution for a single job in a MapReduce-like cluster</h3>
-
-<p>Parallel processing plays an important role for large-scale data analytics. It breaks a job into many small tasks which run parallel on multiple machines such as MapReduce framework. One fundamental challenge faced to such parallel processing is the straggling tasks as they can delay the completion of a job seriously.</p>
-
-<p>In this project, we focus on the speculative execution issue which is used to deal with the straggling problem in the literature. We present a theoretical framework for the optimization of a single job which differs a lot from the previous heuristics-based work. More precisely, we propose two schemes when the number of parallel tasks the job consists of is smaller than cluster size. In the first scheme, no monitoring is needed and we can provide the job deadline guarantee with a high probability while achieve the optimal resource consumption level. The second scheme needs to monitor the task progress and makes the optimal number of duplicates when the straggling problem happens. On the other hand, when the number of tasks in a job is larger than the cluster size, we propose an Enhanced Speculative Execution (ESE) algorithm to make the optimal decision whenever a machine is available for a new scheduling. The simulation results show the ESE algorithm can reduce the job flowtime by 50% while consume fewer resources comparing to the strategy without backup.</p>
-
-<p><img src="http://xuhappy.github.io/images/model_1.jpg" alt="scheduling model" /></p>
-
-<p><strong>Publications</strong></p>
-
-<ul>
-  <li>
-    <p>Huanle Xu, Wing Cheong Lau, “Resource Optimization for Speculative Execution in a MapReduce Cluster,” in the Procs. of IEEE ICNP (PhD Forum), Oct 2013.</p>
-  </li>
-  <li>
-    <p>Huanle Xu, Wing Cheong Lau, “Speculative execution for a single job  in a MapReduce-like system,” in IEEE Cloud, June  2014.</p>
-  </li>
-</ul>
-
-<h3 id="teaching-in-dgut">Teaching in DGUT</h3>
+  <h3 id="teaching-in-dgut">Teaching in DGUT</h3>
 <ul>
   <li><a href="../../../../../images/ElementsOfLP.pdf">Big Data Analytics</a> [2018 Fall】</li>
 </ul>
