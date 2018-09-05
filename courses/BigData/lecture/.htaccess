@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Big Data Analytics"
-AuthUserFile "../.htpasswd"
+AuthUserFile "https://xuhappy.github.io/courses/BigData/.htpasswd"
 Require user huanlexu
