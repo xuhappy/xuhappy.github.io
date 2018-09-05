@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>Homework</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/colors.css" rel="stylesheet" />
+  <link href="assets/css/pygments_style.css" rel="stylesheet" />
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="/iems5709Fall2016/assets/js/jquery.qrcode.min.js"></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$']],
+  processEscapes: true
+  }
+  });
+  </script>
+  <script type="text/javascript"
+  src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript" src="assets/js/jq_mathjax_parse.js"></script>
+
+</head>
+
+<body style="background-image:url('/iems5709Fall2016/assets/img/background.jpg');">
+
+  <header id="header" >
+    <h1>
+        IEMS 5709
+        <br>
+        Advanced Topics in Information Processing — Big Data Systems and Information Processing
+    </h1>
+    <h4>(Offered in 2016 Fall)</h4>
+    <hr>
+  </header>
+
+
+  <div id="page">
+
+    <div id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="/iems5709Fall2016/"><i class="fa fa-home fa-fw"></i> Home</a></li>
+          <!-- <li><a href="/iems5709Fall2016/"><i class="fa fa-bullhorn fa-fw"></i> News</a></li> -->
+          <li><a href="/iems5709Fall2016/lecture/"><i class="fa fa-book fa-fw"></i> Lecture</a></li>
+          <li><a href="/iems5709Fall2016/tutorial/"><i class="fa fa-book fa-fw"></i> Tutorial</a></li>
+		  <li><a href="/iems5709Fall2016/project/"><i class="fa fa-book fa-fw"></i> Project</a></li>
+          <li><a href="/iems5709Fall2016/homework"><i class="fa fa-pencil fa-fw"></i> Homework</a></li>
+          <li><a href="http://mobitec.ie.cuhk.edu.hk/iems5709Spring2016"><i class="fa fa-tag fa-fw"></i> Related Course</a></li>
+          <li><a href="/iems5709Fall2016/reference"><i class="fa fa-tag fa-fw"></i> Reference</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="content">
+      <h1>~ Homework ~
+      </h1>
+      <div>
+        <p id="feed" style="display:block; text-align:right">
+          <a href="/iems5709Fall2016/feed.xml"><i class="fa fa-rss fa-fw"></i>Feed</a>
+        </p>
+      </div>
+      <br>
+      <div>
+        <ul>
+<li><a href="Homework1.pdf">Homework 1</a> (Due on Oct 18)</li>
+<li><a href="Homework2.pdf">Homework 2</a> (Due on Nov 14)</li>
+<li><a href="Homework3.pdf">Homework 3</a> (Due on Dec 5)</li>
+</ul>
+
+<!---
+* [Homework 2](Homework2.pdf) (Due on Mar 21)
+* [Homework 3](Homework3.pdf) (Due on Apr 13)
+-->
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer id="footer">
+    <p class="copyright">Copyright &copy; 2018 CUHK-IEMS 5709. Powered by <a href="http://jekyllrb.com">Jekyll</a>, original theme by <a href="http://www.webmaster-source.com">Matt Harzewski</a>,
+      modified by <a href="https://home.ie.cuhk.edu.hk/~xh112">Huanle Xu</a>
+    </p>
+    <p>
+      <small>Site last compiled at: 2018-09-05 18:10:30 +0800</small>
+    </p>
+  </footer>
+
+<script>
+	//jQuery('#qrcode').qrcode("this plugin is great");
+	jQuery('#qrcode').qrcode({
+		//render	: "table",
+		text	: $(location).attr('href'),
+    width: 128,
+    height: 128
+	});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46660865-1', 'cuhk.edu.hk');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

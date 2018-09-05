@@ -1,0 +1,14 @@
+#collaborators img {
+	/*max-width: 80px;*/
+	max-height: 40px;
+}
+
+#collaborators table {
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+#collaborators td { 
+    padding: 10px;
+    text-align: center;
+}

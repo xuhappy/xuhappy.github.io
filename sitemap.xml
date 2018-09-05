@@ -21,39 +21,89 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://xuhappy.github.io/archives/</loc>
-    <lastmod>2018-07-16T11:45:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>http://xuhappy.github.io/blog/gallery/</loc>
-    <lastmod>2018-07-16T11:45:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>http://xuhappy.github.io/blog/archives/</loc>
-    <lastmod>2018-07-16T11:45:48+08:00</lastmod>
+    <lastmod>2018-09-05T18:45:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://xuhappy.github.io/</loc>
-    <lastmod>2018-07-16T11:45:48+08:00</lastmod>
+    <lastmod>2018-09-05T18:45:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>http://xuhappy.github.io/blog/archives/</loc>
+    <lastmod>2018-09-05T18:45:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://xuhappy.github.io/archives/</loc>
+    <lastmod>2018-09-05T18:45:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>http://xuhappy.github.io/about/</loc>
-    <lastmod>2018-07-16T11:45:48+08:00</lastmod>
+    <lastmod>2018-09-05T18:45:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://xuhappy.github.io/project/</loc>
-    <lastmod>2018-07-16T11:45:48+08:00</lastmod>
+    <lastmod>2018-09-05T18:45:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://xuhappy.github.io/BigData/lecture/index.html</loc>
+    <lastmod>2018-09-05T18:10:30+08:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://xuhappy.github.io/BigData/tutorial/tutorial3/index.html</loc>
+    <lastmod>2018-09-05T18:10:30+08:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://xuhappy.github.io/BigData/tutorial/index.html</loc>
+    <lastmod>2018-09-05T18:10:30+08:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://xuhappy.github.io/BigData/tutorial/tutorial2/index.html</loc>
+    <lastmod>2018-09-05T18:10:30+08:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://xuhappy.github.io/BigData/tutorial/tutorial1/index.html</loc>
+    <lastmod>2018-09-05T18:10:30+08:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://xuhappy.github.io/BigData/index.html</loc>
+    <lastmod>2018-09-05T18:10:30+08:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://xuhappy.github.io/BigData/project/index.html</loc>
+    <lastmod>2018-09-05T18:10:30+08:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://xuhappy.github.io/BigData/project/index_copy.html</loc>
+    <lastmod>2018-09-05T18:10:30+08:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://xuhappy.github.io/BigData/homework/index.html</loc>
+    <lastmod>2018-09-05T18:10:30+08:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://xuhappy.github.io/BigData/reference/index.html</loc>
+    <lastmod>2018-09-05T18:10:30+08:00</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>

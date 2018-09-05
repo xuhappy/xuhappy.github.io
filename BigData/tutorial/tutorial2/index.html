@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>Tutorial 2</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/colors.css" rel="stylesheet" />
+  <link href="assets/css/pygments_style.css" rel="stylesheet" />
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="/iems5709Fall2016/assets/js/jquery.qrcode.min.js"></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$']],
+  processEscapes: true
+  }
+  });
+  </script>
+  <script type="text/javascript"
+  src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript" src="assets/js/jq_mathjax_parse.js"></script>
+
+</head>
+
+<body style="background-image:url('/iems5709Fall2016/assets/img/background.jpg');">
+
+  <header id="header" >
+    <h1>
+        IEMS 5709
+        <br>
+        Advanced Topics in Information Processing — Big Data Systems and Information Processing
+    </h1>
+    <h4>(Offered in 2016 Fall)</h4>
+    <hr>
+  </header>
+
+
+  <div id="page">
+
+    <div id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="/iems5709Fall2016/"><i class="fa fa-home fa-fw"></i> Home</a></li>
+          <!-- <li><a href="/iems5709Fall2016/"><i class="fa fa-bullhorn fa-fw"></i> News</a></li> -->
+          <li><a href="/iems5709Fall2016/lecture/"><i class="fa fa-book fa-fw"></i> Lecture</a></li>
+          <li><a href="/iems5709Fall2016/tutorial/"><i class="fa fa-book fa-fw"></i> Tutorial</a></li>
+		  <li><a href="/iems5709Fall2016/project/"><i class="fa fa-book fa-fw"></i> Project</a></li>
+          <li><a href="/iems5709Fall2016/homework"><i class="fa fa-pencil fa-fw"></i> Homework</a></li>
+          <li><a href="http://mobitec.ie.cuhk.edu.hk/iems5709Spring2016"><i class="fa fa-tag fa-fw"></i> Related Course</a></li>
+          <li><a href="/iems5709Fall2016/reference"><i class="fa fa-tag fa-fw"></i> Reference</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="content">
+      <h1>~ Tutorial 2 ~
+      </h1>
+      <div>
+        <p id="feed" style="display:block; text-align:right">
+          <a href="/iems5709Fall2016/feed.xml"><i class="fa fa-rss fa-fw"></i>Feed</a>
+        </p>
+      </div>
+      <br>
+      <div>
+        <article class="tutorial">
+
+	<div class="tutorial-content"><ul>
+<li>Single-node Hadoop Setup</li>
+<li>Run a word-count MapReduce job</li>
+<li>Secondary Sort / Composite Key</li>
+</ul>
+
+<h2>Single-node Hadoop Setup</h2>
+
+<p><strong>Prerequisites:</strong></p>
+
+<p>1). Sun Java 7:</p>
+
+<p>Hadoop 2.7.1 requires a working Java 1.7+ (aka Java 7) installation. We will install Java 7 in this tutorial.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>ubuntu@master:~$ sudo apt-get update
+ubuntu@master:~$ sudo apt-get install openjdk-7-jre-headless
+ubuntu@master:~$ sudo apt-get install openjdk-7-jdk
+</code></pre></div>
+<p>Notes:Other methods to install java on Linux.<a href="http://www.wikihow.com/Install-Java-on-Linux">link</a></p>
+
+<p>After installation, make a quick check whether JDK is correctly set up:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>ubuntu@master:~$ java -version
+java version &quot;1.7.0_111&quot;
+OpenJDK Runtime Environment (IcedTea 2.6.3) (7u91-2.6.3-0ubuntu0.14.04.1)
+OpenJDK 64-Bit Server VM (build 24.91-b01, mixed mode)
+</code></pre></div>
+<p>2). Create an User Account for Hadoop:</p>
+
+<p>We do not want to run Hadoop as the root. So we will create a new user/group for hadoop related jobs. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>ubuntu@master:~$ sudo addgroup hadoop
+Adding group `hadoop&#39; (GID 1001) ...
+Done.
+ubuntu@master:~$ sudo adduser --ingroup hadoop hduser
+</code></pre></div>
+<p>3). Install SSH:</p>
+
+<p>SSH (“Secure SHell”) is a protocol for securely accessing one machine from another. Hadoop uses SSH for accessing another slaves nodes to start and manage all HDFS and MapReduce daemons. SSH server should has been already installed. Otherwise, install SSH server by:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>ubuntu@master:~$ sudo apt-get install openssh-server
+</code></pre></div>
+<p>Now we login as <code>hduser</code> and the rest of the tutorial will act as <code>hduser</code>, if not specified explicitly.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>ubuntu@master:~$ su hduser
+
+#Go to home directory of hduser
+hduser@master:/home/ubuntu$ cd ~
+</code></pre></div>
+<p>Generate SSH key pairs for hduser.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>#Use empty passphrase
+hduser@master:~$ ssh-keygen -t rsa -f id_rsa
+hduser@master:~$ mkdir .ssh
+hduser@master:~$ mv id_rsa* .ssh/
+hduser@master:~$ cat id_rsa.pub &gt;&gt; .ssh/authorized_keys
+hduser@master:~$ chmod 644 .ssh/authorized_keys 
+
+#Verify by ssh to localhost
+hduser@master:~$ ssh localhost
+The authenticity of host &#39;localhost (127.0.0.1)&#39; can&#39;t be established.
+ECDSA key fingerprint is c1:7b:f2:19:f0:fb:5d:a1:ee:a6:18:6b:df:6a:85:f5.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added &#39;localhost&#39; (ECDSA) to the list of known hosts.
+Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-74-generic x86_64)
+...
+</code></pre></div>
+<p>4). Disable IPv6:</p>
+
+<p>Hadoop does not support IPv6, we need to disable it. Change the configuration file as <code>root</code></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>ubuntu@master:~$ sudo vim /etc/sysctl.conf 
+
+#Append the following lines at the end of the file
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+</code></pre></div>
+<p><strong>Install Hadoop</strong></p>
+
+<p>1). Download and extract the Hadoop package</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ wget http://ftp.cuhk.edu.hk/pub/packages/apache.org/hadoop/common/hadoop-2.7.1/hadoop-2.7.1.tar.gz
+hduser@master:~$ tar -zxvf hadoop-2.7.1.tar.gz
+</code></pre></div>
+<p>2). Configurations</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>#Create directories for Namenode and Datanode
+hduser@master:~$ mkdir -p hadoop_tmp/hdfs/namenode
+hduser@master:~$ mkdir -p hadoop_tmp/hdfs/datanode
+</code></pre></div>
+<p>Update Environment variables</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>#Configuration file : hadoop-env.sh
+hduser@master:~$ vim hadoop-2.7.1/etc/hadoop/hadoop-env.sh
+
+#Modify JAVA_HOME to be
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+
+#Set user environment variables
+hduser@master:/home/ubuntu$ vim ~/.bashrc
+
+#Append the following lines at the end of the file
+#JAVA_HOME may differs if you install JAVA in other ways 
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+export HADOOP_HOME=/home/hduser/hadoop-2.7.1
+export PATH=$PATH:$HADOOP_HOME/bin
+export PATH=$PATH:$HADOOP_HOME/sbin
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_HDFS_HOME=$HADOOP_HOME
+export YARN_HOME=$HADOOP_HOME
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export HADOOP_OPTS=&quot;-Djava.library.path=$HADOOP_HOME/lib&quot;
+
+
+#activate your configuration
+source ~/.bashrc
+</code></pre></div>
+<p>Update Hadoop configuration files</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>#Configuration file : core-site.xml
+hduser@master:~$ vim hadoop-2.7.1/etc/hadoop/core-site.xml 
+
+#Add those lines in the configuration section
+&lt;property&gt;
+  &lt;name&gt;fs.default.name&lt;/name&gt;
+  &lt;value&gt;hdfs://localhost:9000&lt;/value&gt;
+&lt;/property&gt;
+
+
+#Configuration file : hdfs-site.xml
+hduser@master:~$ vim hadoop-2.7.1/etc/hadoop/hdfs-site.xml
+
+#Add those lines in the configuration section
+&lt;property&gt;
+      &lt;name&gt;dfs.replication&lt;/name&gt;
+      &lt;value&gt;1&lt;/value&gt;
+ &lt;/property&gt;
+ &lt;property&gt;
+      &lt;name&gt;dfs.namenode.name.dir&lt;/name&gt;
+      &lt;value&gt;file:/home/hduser/hadoop_tmp/hdfs/namenode&lt;/value&gt;
+ &lt;/property&gt;
+ &lt;property&gt;
+      &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt;
+      &lt;value&gt;file:/home/hduser/hadoop_tmp/hdfs/datanode&lt;/value&gt;
+ &lt;/property&gt;
+
+
+#Configuration file : yarn-site.xml
+hduser@master:~$ vim hadoop-2.7.1/etc/hadoop/yarn-site.xml
+
+#Add those lines in the configuration section
+&lt;property&gt;
+      &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;
+      &lt;value&gt;mapreduce_shuffle&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+      &lt;name&gt;yarn.nodemanager.aux-services.mapreduce.shuffle.class&lt;/name&gt;
+      &lt;value&gt;org.apache.hadoop.mapred.ShuffleHandler&lt;/value&gt;
+&lt;/property&gt;
+
+
+#Configuration file : mapred-site.xml
+hduser@master:~$ cp hadoop-2.7.1/etc/hadoop/mapred-site.xml.template hadoop-2.7.1/etc/hadoop/mapred-site.xml
+hduser@master:~$ vim hadoop-2.7.1/etc/hadoop/mapred-site.xml
+
+#Add those lines in the configuration section
+&lt;property&gt;
+      &lt;name&gt;mapreduce.framework.name&lt;/name&gt;
+      &lt;value&gt;yarn&lt;/value&gt;
+&lt;/property&gt;
+</code></pre></div>
+<p>3). Format namenode</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ hdfs namenode -format
+</code></pre></div>
+<p>4). Start Hadoop</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>#Start Hadoop File System
+hduser@master:~$ start-dfs.sh
+
+#Start MapReduce
+hduser@master:~$ start-yarn.sh 
+
+#Start Job History Server
+hduser@master:~$ mr-jobhistory-daemon.sh start historyserver
+
+#Verify if succeed
+hduser@master:~$ jps
+13644 SecondaryNameNode
+1739 JobHistoryServer
+13812 ResourceManager
+13971 NodeManager
+13435 DataNode
+13266 NameNode
+14268 Jps
+</code></pre></div>
+<p>Go to <a href="http://host_ip:8088">http://host_ip:8088</a> for ResourceManager and <a href="http://host_ip:50070">http://host_ip:50070</a> for NameNode.</p>
+
+<p><strong>Hadoop Cluster Setup</strong></p>
+
+<p>Go to <a href="http://pingax.com/install-apache-hadoop-ubuntu-cluster-setup/">Configure Hadoop Cluster</a> for details. The Hadoop version may be different, but configuration is similar. </p>
+
+<h2>Run a MapReduce Job</h2>
+
+<p><strong>Word Count</strong></p>
+
+<p>We will now run your first Hadoop MapReduce job. We will use the WordCount example job which reads text files and counts how often words occur. The input is text files and the output is text files, each line of which contains a word and the count of how often it occurred, separated by a tab.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ wget &#39;https://github.com/hupili/agile-ir/raw/master/data/Shakespeare.tar.gz&#39;
+hduser@master:~$ tar -zxvf Shakespeare.tar.gz
+</code></pre></div>
+<p>Use <code>-copyFromLocal</code> to upload the file into Hadoop File System</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ hadoop dfs -copyFromLocal /home/hduser/data /data
+hduser@master:~$ hadoop dfs -ls /data
+</code></pre></div>
+<p>Use <code>hadoop dfs -help</code> to check all the commands available in the Hadoop File System.
+Hadoop comes with several sample MapReduce job, and wordcount is one of them.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ cp hadoop-2.7.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.1.jar ./
+hduser@master:~$ hadoop jar hadoop-mapreduce-examples-2.7.1.jar wordcount /data /result
+</code></pre></div>
+<p><code>/data</code> is the input directory and <code>/result</code> is the output directory. Both of them refer to Hadoop File System.</p>
+
+<p><strong>Small files Problem in Hadoop File System</strong>:HDFS is not geared up to efficiently accessing small files: it is primarily designed for streaming access of large files. Reading through small files normally causes lots of seeks and lots of hopping from datanode to datanode to retrieve each small file, all of which is an inefficient data access pattern.</p>
+
+<p><strong>Small files Problem in MapReduce</strong>:Map tasks usually process a block of input at a time (using the default FileInputFormat). If the file is very small and there are a lot of them, then each map task processes very little input, and there are a lot more map tasks, each of which imposes extra bookkeeping overhead. </p>
+
+<p>You can also kill a job while it&#39;s running.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ hadoop job -list
+DEPRECATED: Use of this script to execute mapred command is deprecated.
+Instead use the mapred command for it.
+
+16/01/27 08:33:25 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/01/27 08:33:26 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+Total jobs:1
+                  JobId      State       StartTime      UserName         Queue    Priority   UsedContainers  RsvdContainers  UsedMem   RsvdMem   NeededMem     AM info
+ job_1453881549433_0001    RUNNING   1453883148868        hduser       default      NORMAL                7               0    8192M        0M       8192M  http://master:8088/proxy/application_1453881549433_0001/
+
+hduser@master:~$ hadoop job -kill job_1453881549433_0001
+DEPRECATED: Use of this script to execute mapred command is deprecated.
+Instead use the mapred command for it.
+
+16/01/27 08:36:47 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/01/27 08:36:49 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+Killed job job_1453881549433_0001
+</code></pre></div>
+<p>Now how about merge all the files into a large file?</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ cat data/* &gt; largefile
+hduser@master:~$ hadoop dfs -copyFromLocal largefile /largefile 
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+16/01/27 08:40:59 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+
+hduser@master:~$ hadoop dfs -ls /
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+16/01/27 08:41:08 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 3 items
+drwxr-xr-x   - hduser supergroup          0 2016-01-27 08:17 /data
+-rw-r--r--   1 hduser supergroup    6460189 2016-01-27 08:41 /largefile
+drwx------   - hduser supergroup          0 2016-01-27 08:25 /tmp
+
+hduser@master:~$ hadoop jar hadoop-mapreduce-examples-2.7.1.jar wordcount /largefile /result
+</code></pre></div>
+<p>Go to <a href="http://hadoop_node_ip:19888">http://hadoop_node_ip:19888</a> to view detailed job history information. This is also where you get the running time of each mapper and reducer.</p>
+
+<h2>Secondary Sort / Composite Key</h2>
+
+<p>The MapReduce framework automatically sorts the primary keys generated by mappers. In the word count example, tuples like <code>&lt;a, 2010&gt;, &lt;boy, 358&gt;, &lt;computer, 1327&gt;</code> will arrive to the reducers in sequence. </p>
+
+<p>However, what if I want to count the most frequent pair of words? Intermedia tuples will be in the form of <code>&lt;a, boy, 10&gt;, &lt;a, computer, 20&gt;</code>. Assume there are <em>n</em> different words. Then the naive way is to maintain a <em>nxn</em> matrix to record the occurance of every word pairs, but it may run out of memory when <em>n</em> is large.</p>
+
+<p>Secondary sort may help in this case. Use both words as a composite key and tell the MapReduce framework to sort not only the primary key, but also the secondary key. Then we only need to maintain a small array in memory. </p>
+
+<p>Next tutorial will show you how to use secondary sort with Hadoop Streaming. There are some examples in the reference. </p>
+
+<h2>References</h2>
+
+<ul>
+<li>Hadoop streaming: <a href="http://hadoop.apache.org/docs/stable1/streaming.html">http://hadoop.apache.org/docs/stable1/streaming.html</a></li>
+<li>Write your own scripts in python: <a href="http://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/">http://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/</a></li>
+<li>Generic command options: <a href="http://hadoop.apache.org/docs/stable1/streaming.html#Generic+Command+Options">http://hadoop.apache.org/docs/stable1/streaming.html#Generic+Command+Options</a></li>
+<li>Streaming commmand options: <a href="http://hadoop.apache.org/docs/stable1/streaming.html#Streaming+Command+Options">http://hadoop.apache.org/docs/stable1/streaming.html#Streaming+Command+Options</a></li>
+<li>Secondary Sort Java Example: <a href="https://vangjee.wordpress.com/2012/03/20/secondary-sorting-aka-sorting-values-in-hadoops-mapreduce-programming-paradigm/">https://vangjee.wordpress.com/2012/03/20/secondary-sorting-aka-sorting-values-in-hadoops-mapreduce-programming-paradigm/</a></li>
+</ul>
+</div>
+
+</article>
+
+<footer>
+
+<hr>
+
+Bookmark this tutorial:
+
+<div id="qrcode"></div>
+
+<hr>
+
+<small>
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="display:inline;margin:0;width:88px;height:31px;border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" />
+</a>
+This work is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+Creative Commons Attribution 4.0 International License</a>.
+</small>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer id="footer">
+    <p class="copyright">Copyright &copy; 2018 CUHK-IEMS 5709. Powered by <a href="http://jekyllrb.com">Jekyll</a>, original theme by <a href="http://www.webmaster-source.com">Matt Harzewski</a>,
+      modified by <a href="https://home.ie.cuhk.edu.hk/~xh112">Huanle Xu</a>
+    </p>
+    <p>
+      <small>Site last compiled at: 2018-09-05 18:10:30 +0800</small>
+    </p>
+  </footer>
+
+<script>
+	//jQuery('#qrcode').qrcode("this plugin is great");
+	jQuery('#qrcode').qrcode({
+		//render	: "table",
+		text	: $(location).attr('href'),
+    width: 128,
+    height: 128
+	});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46660865-1', 'cuhk.edu.hk');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

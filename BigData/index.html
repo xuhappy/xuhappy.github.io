@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/colors.css" rel="stylesheet" />
+  <link href="assets/css/pygments_style.css" rel="stylesheet" />
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="/iems5709Fall2016/assets/js/jquery.qrcode.min.js"></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$']],
+  processEscapes: true
+  }
+  });
+  </script>
+  <script type="text/javascript"
+  src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript" src="assets/js/jq_mathjax_parse.js"></script>
+
+</head>
+
+<body style="background-image:url('/iems5709Fall2016/assets/img/background.jpg');">
+
+  <header id="header" >
+    <h1>
+        IEMS 5709
+        <br>
+        Advanced Topics in Information Processing — Big Data Systems and Information Processing
+    </h1>
+    <h4>(Offered in 2016 Fall)</h4>
+    <hr>
+  </header>
+
+
+  <div id="page">
+
+    <div id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="/iems5709Fall2016/"><i class="fa fa-home fa-fw"></i> Home</a></li>
+          <!-- <li><a href="/iems5709Fall2016/"><i class="fa fa-bullhorn fa-fw"></i> News</a></li> -->
+          <li><a href="/iems5709Fall2016/lecture/"><i class="fa fa-book fa-fw"></i> Lecture</a></li>
+          <li><a href="/iems5709Fall2016/tutorial/"><i class="fa fa-book fa-fw"></i> Tutorial</a></li>
+		  <li><a href="/iems5709Fall2016/project/"><i class="fa fa-book fa-fw"></i> Project</a></li>
+          <li><a href="/iems5709Fall2016/homework"><i class="fa fa-pencil fa-fw"></i> Homework</a></li>
+          <li><a href="http://mobitec.ie.cuhk.edu.hk/iems5709Spring2016"><i class="fa fa-tag fa-fw"></i> Related Course</a></li>
+          <li><a href="/iems5709Fall2016/reference"><i class="fa fa-tag fa-fw"></i> Reference</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="content">
+      <h1>~ Home ~
+      </h1>
+      <div>
+        <p id="feed" style="display:block; text-align:right">
+          <a href="/iems5709Fall2016/feed.xml"><i class="fa fa-rss fa-fw"></i>Feed</a>
+        </p>
+      </div>
+      <br>
+      <div>
+        <h2>Description</h2>
+
+<p>This course aims to provide students an understanding in the operating principles  and hands-on experience with mainstream Big Data Computing systems. Open-source platforms for Big Data processing and analytics would be discussed. Topics to be covered include:</p>
+
+<ul>
+<li><p>Programming models and design patterns for mainstream Big Data computational frameworks ;</p></li>
+<li><p>System Architecture and Resource Management for Data-center-scale Computing ;</p></li>
+<li><p>System Architecture and Programming Interface of Distributed Big Data stores ; </p></li>
+<li><p>High-level Big Data Query languages and their processing systems ;</p></li>
+<li><p>Operational and Programming tools for different stages of the Big Data processing pipeline including data collection/ ingestion, serialization and migration, workflow coordination. </p></li>
+</ul>
+
+<h2>Course Pre-requisite:</h2>
+
+<p>This course contains substantial hands-on components which require solid background in programming and hands-on operating systems experience. If you have never used a command-line interface to install/configure/manage an operating system, e.g. a linux-based one, you will need to pick-up the skills yourself and IT CAN BE VERY TIME-CONSUMING for you to complete the homeworks. (Students without the aforementioned required background may take several 10&#39;s of hours to finish EACH homework assignment).</p>
+
+<h2>Course Information</h2>
+
+<p>Lecture time and venue:</p>
+
+<ul>
+<li>WMY 407 ; Tue 7:00pm - 10:00pm</li>
+</ul>
+
+<p>Instructor:</p>
+
+<ul>
+<li><a href="http://www.ie.cuhk.edu.hk/%7Ewclau/">Prof. Wing Cheong Lau</a>. <code>wclau [at] ie [dot] cuhk [dot] edu [dot] hk</code></li>
+<li>Office hours: Tue 4-5:00pm or by Appointment (SHB 818)</li>
+</ul>
+
+<p>Lab/Tutorial:</p>
+
+<ul>
+<li>TBD at Rm 1008, William M.W. Mong Engineering Building, CUHK</li>
+</ul>
+
+<p>Teaching Assistant:</p>
+
+<ul>
+<li><a href="https://personal.ie.cuhk.edu.hk/%7Ezbyang/">YANG Zhibo</a>
+
+<ul>
+<li><code>zbyang [at] cuhk [dot] edu [dot] hk</code></li>
+<li>Office hour: Thur 4:00pm-5:00pm or by Appointment (SHB 802)</li>
+</ul></li>
+<li><a href="http://personal.ie.cuhk.edu.hk/%7Ehlxu/">XU Huanle</a>
+
+<ul>
+<li><code>xhlcuhk [at] gmail [dot] com</code></li>
+<li>Office hour: Tue 3:00pm-4:00pm or by Appointment (SHB 802)</li>
+</ul></li>
+</ul>
+
+<p>Website account:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>User: iems5709
+Password: fall5709iems
+</code></pre></div>
+<h2>Recommended Text</h2>
+
+<ul>
+<li><p>[Spark 1] Apache® Spark™ Analytics Made Simple,
+<a href="http://go.databricks.com/apache-spark-analytics-made-simple-databricks">http://go.databricks.com/apache-spark-analytics-made-simple-databricks</a></p></li>
+<li><p>[Spark 2] Mastering Advanced Analytics with Apache Spark®,
+<a href="http://go.databricks.com/mastering-advanced-analytics-apache-spark">http://go.databricks.com/mastering-advanced-analytics-apache-spark</a></p></li>
+<li><p>[Spark 3] Lessons for Large-Scale Machine Learning Deployments on Apache Spark,
+<a href="http://go.databricks.com/large-scale-machine-learning-deployments-spark-databricks">http://go.databricks.com/large-scale-machine-learning-deployments-spark-databricks</a></p></li>
+<li><p>[Spark 4] Mastering Apache Spark 2.0,
+<a href="http://go.databricks.com/mastering-apache-spark-2.0">http://go.databricks.com/mastering-apache-spark-2.0</a></p></li>
+<li><p>[HadoopAppArch] Hadoop Application Architectures 1st Edition, by Mark Grover, Ted Malaska, Jonathan Seidman and Gwen Shapira, Publisher: O’Reilly Media, July 2015.</p></li>
+<li><p>[Hadoop] Hadoop: The Definitive Guide 4th Edition, by Tom White, published by Oreilly, April 2015.</p></li>
+<li><p>[StormApplied] Storm Applied, by Sean T. Allen, Matthew Jankowski and Peter Pathirana, Publisher: Manning, 2015</p></li>
+<li><p>[JLin] Data-Intensive Text Processing with MapReduce by Jimmy Lin and Chris Dyer, Morgan and Claypool Publishers, 2010, can be freely downloaded from <a href="http://lintool.github.io/MapReduceAlgorithms/">http://lintool.github.io/MapReduceAlgorithms/</a></p></li>
+<li><p>[LearnSpark] Learning Spark: Lightning-Fast Big Data Analysis, 1st Edition, by Karau, Konwinski, Wendell and Zaharia, published by Oreilly,  2015</p></li>
+<li><p>[DataIntensive] Designing Data-Intensive Applications: The Big Ideas behind Reliable, Scalable and Maintainable Systems, Preview Edition, by Martin Kleppmann,  Publisher: O&#39;Reilly Media, 1st Edition to be published in 2016.</p></li>
+<li><p>[BigData] Big Data: Principles and Best Practices of Scalable Realtime Data Systems, by Nathan Marz and James Warren, Publisher: Manning, 2015</p></li>
+<li><p>[NoSQL] NoSQL Overview, Appendix A of the book titled &quot;Graph Databases&quot;, by Ian Robinson, Jim Webber and Emil Eifrem (Can request a free copy from <a href="http://graphdatabases.com">http://graphdatabases.com</a>)</p></li>
+<li><p>[MMDS] Mining of Massive Datasets (Download version 1.3) by Anand Rajaraman, Jeff Ullman and Jure Leskovec, Cambridge University Press.</p></li>
+</ul>
+
+<!--- Latest version can be downloaded from [
+http://i.stanford.edu/~ullman/mmds.html#latest](http://i.stanford.edu/~ullman/mmds.html#latest) -->
+
+<h2>Recommended List of Research Papers for Reading</h2>
+
+<ul>
+<li><p>[MapReduce] Jeffrey Dean and Sanjay Ghemawat, “MapReduce: Simplified Data Processing on Large Clusters,” OSDI 2004.</p></li>
+<li><p>[GoogleFileSystem] Sanjay Ghemawat, Howard Gobioff and Shun-Tak Leung, “The Google File System,” ACM SOSP 2003.</p></li>
+<li><p>[YARN] V.K. Vavilapalli, A.C.Murthy, “Apache Hadoop YARN: Yet Another Resource Negotiator,” ACM Symposium on Cloud Computing (SoCC) 2013.</p></li>
+<li><p>[Mesos] B. Hindman et al, “Mesos: A Platform for Fine-Grained Resource Sharing in the Data Center”, NSDI 2011.</p></li>
+<li><p>[Borg] A. Verma, L. Pedrosa, “Large-scale cluster management at Google with Borg”, Eurosys 2015</p></li>
+<li><p>[Omega] M. Schwarzkopf, A. Konwinski, M.Abd-El-Malek, J. Wilkes, “Omega: flexible, scalable schedulers for large compute clusters,” Eurosys 2013</p></li>
+<li><p>[Sparrow] K. Ousterhout et al, “Sparrow: Distributed, Low Latency Scheduling”, ACM SOSP 2013</p></li>
+<li><p>[Apollo] E. Boutin et al, “Apollo: Scalable and Coordinated Scheduling for Cloud-Scale Computing”, OSDI 2014</p></li>
+<li><p>[Mercury] K. Karanasos et al, “Mercury: Hybrid Centralized and Distributed Scheduling in Large Shared Clusters”, Usenix  ATC 2015</p></li>
+<li><p>[GraphLab1] Yucheng Low, Joseph Gonzalez et al, “GraphLab: A New Framework for Parallel Machine Learning,” UAI 2010.</p></li>
+<li><p>[PowerGraph] Joseph Gonzalez et al, “PowerGraph: Distributed Graph-Parallel Computation on Natural Graphs,” OSDI 2012.</p></li>
+<li><p>[GraphChi] Aapo Kyrola, Guy Blelloch, Carlos Guestrin, “GraphChi: Large-Scale Graph Computation on Just a PC,” OSDI 2012.</p></li>
+<li><p>[Storm@Twitter] Ankit Toshniwal et al, “Storm@Twitter,” ACM SIGMOD 2014.</p></li>
+<li><p>[PigLatin] Christopher Olston et al, “Pig Latin: A Not-So-Foreign Language for Data Processing,” ACM SIGMOD 2008.</p></li>
+<li><p>[Hive1] Ashish Thusoo et al, “Hive: a warehousing solution over a map-reduce framework,” VLDB 2009.</p></li>
+<li><p>[Hive2] Ashish Thusoo et al, &quot;Data warehousing and analytics infrastructure at facebook,” ACM SIGMOD 2010</p></li>
+<li><p>[Hive3] Ashish Thusoo et al, “Hive - A Petabyte Scale Data Warehouse Using Hadoop,” IEEE ICDE 2010.</p></li>
+<li><p>[HiveAdvances] Yin Huai et al, “Major Technical Advancements in Apache Hive,” ACM SIGMOD 2014.</p></li>
+<li><p>[Dryad] Michael Isard et al, &quot;Dryad: Distributed Data-Parallel Programs from Sequential Building Blocks,” Eurosys 2007.</p></li>
+<li><p>[DryadLINQ] Yuan Yu et al, “DryadLINQ: A System for General-Purpose Distributed Data-Parallel Computing Using a High-Level Language, “ OSDI 2008.</p></li>
+<li><p>[DryadLINQ2] Michael Isard, Yuan Yu, &quot;Distributed Data-Parallel Computing Using a High-Level Programming Language,” ACM SIGMOD 2009</p></li>
+<li><p>[Tez] Bikas Saha et al, &quot;Apache Tez: A Unifying Framework for Modeling and Building Data Processing Applications,” ACM SIGMOD 2015.</p></li>
+<li><p>[Dynamo] Giuseppe DeCandia et al, &quot;Dynamo: Amazon&#39;s Highly Available Key-value Store,&quot; ACM SOSP 2007.</p></li>
+<li><p>[BigTable] Fay Chang et al, “Bigtable: A Distributed Storage System for Structured Data,” OSDI 2006.</p></li>
+<li><p>[Cassandra] Avinash Lakshman, Prashant Malik, “Cassandra - A Decentralized Structured Storage System,” ACM SIGOPS Operating Systems Review, Apr 2010.</p></li>
+<li><p>[RealtimeHadoopFacebook] Dhruba Borthakur et al, “Apache Hadoop goes realtime at Facebook,” ACM SIGMOD 2011.</p></li>
+<li><p>[SparkRDD] Matei Zaharia et al, &quot;Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing,” NSDI 2012.</p></li>
+<li><p>[Spark] Matei Zaharia et al, “Fast and Interactive Analytics over Hadoop Data with Spark,” Usenix ;login Aug 2012.</p></li>
+<li><p>[Spark Streaming] Matei Zaharia et al, &quot;Discretized streams: Fault-tolerant streaming computation at scale,” ACM SOSP 2013.</p></li>
+<li><p>[SharkSQL] Reynold S. Xin et al, &quot;Shark: SQL and rich analytics at scale,” ACM SIGMOD 2013</p></li>
+<li><p>[SparkSQL] Michael Armbrust et al, “Spark SQL: Relational Data Processing in Spark,” ACM SIGMOD 2015.</p></li>
+<li><p>[GraphX]  Joseph E. Gonzalez et al, &quot;GraphX: Graph Processing in a Distributed Dataflow Framework,” OSDI 2014.</p></li>
+<li><p>[SparkScaling] Michael Armburst et al, “Scaling Spark in the real world: performance and usability,” VLDB 2015.</p></li>
+<li><p>[MapReduceVsSpark] Juwei Shi et al, &quot;Clash of the Titans: MapReduce vs. Spark for Large Scale Data Analytics,&quot; VLDB 2015. </p></li>
+<li><p>[SparkMLbase] T. Kraska, A. Talwalkar, J.Duchi, R. Griffith, M. Franklin, M.I. Jordan, &quot;MLbase: A Distributed Machine Learning System,&quot; In Conference on Innovative Data Systems Research (CIDR), 2013.</p></li>
+<li><p>[SparkMLI] E. Sparks, A. Talwalkar, V. Smith, J. Kottalam, X. Pan, J. Gonzalez, J. Gonzalez, M. Franklin, M. I. Jordan, T. Kraska.  MLI: An API for Distributed Machine Learning. In International Conference on Data Mining, 2013.</p></li>
+<li><p>[SparkMLlib]  Xiangrui Meng et al, &quot;MLlib: Machine learning in Apache Spark,” arXiv:1505.06807, May 2015.</p></li>
+<li><p>[SparkNet] Philipp Moritz, Robert Nishihara, Ion Stoica, Michael Jordan, &quot;SparkNet: Training Deep Networks on Spark,” ICLR 2016.</p></li>
+<li><p>[Naiad] Derek G. Murray et al, &quot;Naiad: A Timely Dataflow System,” ACM SOSP 2013.</p></li>
+<li><p>[ZooKeeper1] P Hunt, M Konar, FP Junqueira, B Reed , “ZooKeeper: Wait-free Coordination for Internet-scale Systems,” Usenix ATC 2010.</p></li>
+<li><p>[ZAB1] Benjamin Reed, Flavio P. Junqueira, “A simple totally ordered broadcast protocol,” 2nd Workshop on Large-scale Distributed Systems and Middleware (LADIS), 2008.</p></li>
+<li><p>[ZAB2] F.P. Junqueira, B.C. Reed, M. Serafini, &quot;High-performance broadcast for primary-backup systems,” IEEE/IFIP DSN, 2011.</p></li>
+</ul>
+
+<h2>Recommended Programming References</h2>
+
+<ul>
+<li><p>[SparkAnalytics] Advanced Analytics with Spark, by Sandy Ryza, Uri Laserson, Sean Owen and Josh Wills, Publisher: O’Reilly Media, April 2015</p></li>
+<li><p>[DataAlgorithms] Data Algorithms: Recipes for Scaling Up with Hadoop and Spark, by Mahmoud Parsian, Publisher: O&#39;Reilly Media, Aug 2015</p></li>
+<li><p>[LearnSpark] Learning Spark, by Holden Karau, Andy Konwinski, Patrick Wendell and Matei Zaharia, Publisher: O’Reilly Media, Feb 2015</p></li>
+<li><p>[HBase] HBase: The Definitive Guide, by Lars George, published by O’Reilly Media,.</p></li>
+<li><p>[CassandraBook] Cassandra: The Definitive Guide, by Eben Hewitt, published by O’Reilly Media,.</p></li>
+<li><p>[ZooKeeper] ZooKeeper: Distributed Process Coordination, by Flavio Junqueira and Benjamin Reed, published by O’Reilly Media, 2013</p></li>
+<li><p>[Pig] Programming Pig, by Alan Gates, published by O’Reilly Media</p></li>
+<li><p>[Hive] Programming Hive, by Edward Capriolo, Dean Wampler, Jason Rutherglen, published by O’Reilly Media,</p></li>
+<li><p>[OpenStackOp] OpenStack Operations Guide, published by O’Reilly Media, (current-version available online at: <a href="http://docs.openstack.org/openstack-ops/content">http://docs.openstack.org/openstack-ops/content</a> ) </p></li>
+</ul>
+
+<h2>
+<a name="tentative-timetable" class="anchor" href="#tentative-timetable"><span class="octicon octicon-link"></span></a>Tentative Timetable</h2>
+
+<table class="home_time_table">
+<tr>
+<th>Lecture Date</th>
+<th>Topic </th>
+<th>Period </th>
+<th>Recommended Readings </th>
+<th>Additional References</th>
+</tr>
+<tr>
+<td>Sept 6 </td>
+<td>Course Admin ; Overview of Big Data Applications ;  Data-center Architecture </td>
+<td> 7:00pm - 10:00pm </td>
+<td>[Jlin]Ch1, [DataCenter], [OpenStackOp]   </td>
+<td> - </td>
+</tr>
+<tr>
+<td>Sept 13 </td>
+<td>Programming Models for Big Data Computing I:  MapReduce/ Hadoop, GFS/HDFS and the Big Data Processing Stack  </td>
+<td> 7:00pm - 10:00pm   </td>
+<td> [MapReduce], [GoogleFileSystem] ; [MMDS]Ch2.1-2.4, [JLin]Ch2,Ch3.1-3.4, [Hadoop]Ch.2-3 </td>
+<td> </td>
+</tr>
+<tr>
+<td>Sept 20, 27 </td>
+<td> Big Data Processing Stack (cont'd) ; Resource Management for Data-center-scale Computing: Hadoop YARN, Mesos and beyond ;  </td>
+<td> 7:00pm - 10:00pm  </td>
+<td> [YARN], [Mesos], [Hadoop]Ch.2-3, [CloudData] ;  </td>
+<td> [Borg], [Omega], [Sparrow], [Apollo], [Mercury] </td>
+</tr>
+<tr>
+<td>Oct 4, 18 </td>
+<td>Programming Models for Big Data Computing II: Graph-based Computing frameworks: Pregel/Giraph and GraphLab </td>
+<td>  7:00pm - 10:00pm   </td>
+<td> [GraphLab1], [PowerGraph] </td>
+<td> [GraphChi] </td>
+</tr>
+<tr>
+<td>Oct 18,  25 </td>
+<td>Programming Models for Big Data Computing III: Stream-based Processing: Storm; ZooKeeper</td>
+<td> 7:00pm - 10:00pm  </td>
+<td> [Storm@Twitter], [StormApplied], [ZooKeeper1] </td>
+<td> [BigData], [ZooKeeper], [ZAB1], [ZAB2] </td>
+</tr>
+<tr>
+<td>Nov. 1 </td>
+<td>High-level Data Query Languages for Big Data Analytics: Pig and Hive </td>
+<td> 7:00pm - 10:00pm   </td>
+<td> [PigLatin], [Hive1], [Hadoop]Ch.16-17 </td>
+<td> [Hive2], [Hive3], [HiveAdvances], [Pig], [Hive] </td>
+</tr>
+<!---  
+<tr>
+<td>Oct 25 </td>
+<td>Programming Models for Big Data Computing IV: DAG-based Computational Frameworks: Dryad </td>
+<td> 7:00pm - 10:00pm   </td>
+<td> [Dryad], [DryLINQ] </td>
+<td>-</td>
+</tr>
+-->
+<tr>
+<td>Nov 8</td>
+<td>Programming Models for Big Data Computing IV: Spark: Spark and BDAS, Quick Tour of Scala, Spark RDDs</td>
+<td> 7:00pm - 10:00pm  </td>
+<td> [SparkRDD], [Spark], [SparkAnalytics]Ch.2 </td>
+<td> [SparkScaling], [MapReduceVsSpark], [LearnSpark]Ch.1, Ch.10 ; [SparkAnalytics] Appendix A  </td>
+</tr>
+<tr>
+<td>Nov 15</td>
+<td> <strong>No class 
+</td>
+<td> <font color="red">Professor will be out of town for a conference trip</font>  </td>
+<td> - </td>
+<td> - </td>
+</tr>
+<tr>
+<td>Nov 22</td>
+<td>Programming Models for Big Data Computing IV: Spark (cont'd): GraphX, Spark Streaming, SparkSQL, MLlib </td>
+<td> 7:00pm - 10:00pm  </td>
+<td> [GraphX], [SparkStreaming], [SparkSQL], [SparkMLlib], [LearnSpark]Ch.11 ; </td>
+<td> [SharkSQL], [SparkMBase], [SparkMLI] </td>
+</tr>
+<td>Nov 29</td>
+<td>Distributed Big Data Stores: BigTable/ HBase, Dynamo, Cassandra </td>
+<td> 7:00pm - 10:00pm  </td>
+<td>[Dynamo], [BigTable], [Cassandra], [RealtimeHadoopFacebook], [NoSQL], [Hadoop]Ch.20 </td>
+<td>[HBase], [CassandraBook] </td>
+</tr>
+<tr>
+<td>Dec 6 </td>
+<td>The Overall Big Data Processing Pipeline: Tools for Data Ingestion, Data Serialization and Workflow Coordination</td>
+<td> 7:00pm - 10:00pm  </td>
+<td> [HadoopAppArch] </td>
+<td> [SparkAnalytics] Appendix B </td>
+</tr>
+<td>Dec 13 </td>
+<td> <strong>**Final examination**</strong> </td>
+<td> 7:30pm - 9:30pm  (WMY 407)</td>
+<td> - </td>
+<td> - </td>
+<!-- <tr>
+<td>Dec 17 (Sat)</td>
+<td><strong>**Project Presentations**</strong> </td>
+<td> 1:30pm - 5:15pm at <font color="red">NOTE the Change of Venue to WMY 407</font></td>
+<td> - </td>
+<td> - </td>
+</tr> -->
+</tr>
+<tr>
+<td>Dec 20 </td>
+<td><strong>** Project Presentations ** </strong></td>
+<td> 1:30pm - 10:00pm (WMY 407) </td>
+<td><strong>** Written Report due on Dec 30**</strong></td>
+<td> - </td>
+</tr>
+</table>
+
+<h2>Course Assessment</h2>
+
+<p>Your grade will be based on the following components:</p>
+
+<ul>
+<li>Homework &amp; Programming assignments (about 3-4 sets in total): 40% </li>
+<li>Project: 20%</li>
+<li>Final Exam: 40% (2-hour final examination)</li>
+</ul>
+
+<h2>Student/Faculty Expectations on Teaching and Learning</h2>
+
+<p><a href="http://mobitec.ie.cuhk.edu.hk/StaffStudentExpectations.pdf">http://mobitec.ie.cuhk.edu.hk/StaffStudentExpectations.pdf</a></p>
+
+<h2>Academic Honesty</h2>
+
+<p>You are expected to do your own work and acknowledge the use of anyone else&#39;s words or ideas. You <strong>MUST</strong> put down in your submitted work the names of people with whom you have had discussions.</p>
+
+<p>Refer to <a href="http://www.cuhk.edu.hk/policy/academichonesty">http://www.cuhk.edu.hk/policy/academichonesty</a> for details</p>
+
+<p>When scholastic dishonesty is suspected, the matter will be turned over to the University authority for action.</p>
+
+<p>You <strong>MUST</strong> include the following signed statement in all of your submitted homework, project assignments and examinations. Submission without a signed statement will not be graded.</p>
+
+<blockquote>
+<p>I declare that the assignment here submitted is original except for source material explicitly acknowledged, and that the same or related material has not been previously submitted for another course.  I also acknowledge that I am aware of University policy and regulations on honesty in academic work, and of the disciplinary guidelines and procedures applicable to breaches of such policy and regulations, as contained in the website <a href="http://www.cuhk.edu.hk/policy/academichonesty">http://www.cuhk.edu.hk/policy/academichonesty/</a>.</p>
+</blockquote>
+
+<h2>Acknowledgement</h2>
+
+<p>Thanks to Amazon Web Services, Google and Microsoft Azure for providing free computing resource support of this course</p>
+
+
+<link href="assets/css/index.css" rel="stylesheet" />
+
+
+<h2>Course Collaborators</h2>
+
+<div id="collaborators">
+	<table>
+		<tr>
+			<td>
+				<a href="https://www.windowsazurepass.com/azureu">
+					<img src="http://www.windowsazurepass.com/Content/Images/azureAdvert.png">
+					Windows Azure
+				</a>
+			</td>
+			<td>
+				<a href="https://www.mirantis.com/">
+					<img src="http://zdnet4.cbsistatic.com/hub/i/r/2014/09/18/23cf0e17-3eff-11e4-b6a0-d4ae52e95e57/thumbnail/770x578/a165edc3f78045bf460842679d48b477/mirantis-logo.gif">
+                    Mirantis
+				</a>
+			</td>
+			<td>
+				<a href="http://www.cuhk.edu.hk">
+					<img src="http://www.cuhk.edu.hk/favicon.ico">
+					CUHK
+				</a>
+			</td>		
+			<td>
+				<a href="https://aws.amazon.com/ec2/">
+					<img src="http://webapp.org.ua/wp-content/uploads/2011/12/aws_logo.jpg">
+					Amazon EC2
+				</a>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer id="footer">
+    <p class="copyright">Copyright &copy; 2018 CUHK-IEMS 5709. Powered by <a href="http://jekyllrb.com">Jekyll</a>, original theme by <a href="http://www.webmaster-source.com">Matt Harzewski</a>,
+      modified by <a href="https://home.ie.cuhk.edu.hk/~xh112">Huanle Xu</a>
+    </p>
+    <p>
+      <small>Site last compiled at: 2018-09-05 18:10:30 +0800</small>
+    </p>
+  </footer>
+
+<script>
+	//jQuery('#qrcode').qrcode("this plugin is great");
+	jQuery('#qrcode').qrcode({
+		//render	: "table",
+		text	: $(location).attr('href'),
+    width: 128,
+    height: 128
+	});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46660865-1', 'cuhk.edu.hk');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

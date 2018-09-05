@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>IEMS 5709 Advanced Topics in Information Processing — Big Data Systems and Information Processing</title>
+		<description>IEMS 5709 -- Advanced Topics in Information Processing — Big Data Systems and Information Processing</description>
+		<link>http://mobitec.ie.cuhk.edu.hk/iems5709Fall2016</link>
+		<atom:link href="http://mobitec.ie.cuhk.edu.hk/iems5709Fall2016/feed.xml" rel="self" type="application/rss+xml" />
+		
+	</channel>
+</rss>
