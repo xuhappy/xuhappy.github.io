@@ -1,4 +1,4 @@
 AuthType Basic
-AuthName "IEMS5709 Advanced Topics in Information Processing — Big Data Systems and Information Processing"
-AuthUserFile "/data4/project/mobitec/htdocs/iems5709Fall2016/.htpasswd"
-Require user iems5709
+AuthName "Big Data Analytics"
+AuthUserFile "../.htpasswd"
+Require user huanlexu
