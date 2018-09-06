@@ -43,7 +43,7 @@ body {
 	font-family: Verdana, serif;
 	font-size: 13px;
 	line-height: 1.7;
-	background-color: #F1EED9
+	/***background-color: #F1EED9***/
 }
 
 a, a:active, a:visited{color:#0088cc;text-decoration:none;}
