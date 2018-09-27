@@ -101,7 +101,7 @@
 </ul>
 
 <h3>Navigation</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~$ pwd
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~$ pwd
 /home/azureuser
 azureuser@test-hpl:~$ ls
 azureuser@test-hpl:~$ cd ..
@@ -121,7 +121,7 @@ Rule of thumb: read output carefully, esp. during more complex operations later.
 Linux command outputs are usually self-documenting.</p>
 
 <h3>Seeking for help</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:/$ ls --help
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:/$ ls --help
 Usage: ls [OPTION]... [FILE]...
 List information about the FILEs (the current directory by default).
 Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
@@ -133,7 +133,7 @@ Mandatory arguments to long options are mandatory for short options too.
 <p><strong>NOTE:</strong> 
 <code>...</code> in the last line denotes omitted console outputs.
 Find the complete version by enter the corresponding command.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:/$ man ls
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:/$ man ls
 
 LS(1)                                               User Commands                                               LS(1)
 
@@ -164,7 +164,7 @@ Press <code>q</code> to end.</p>
 <h3>Basic file/dir operations</h3>
 
 <p>Make directories:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~$ mkdir mydir
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~$ mkdir mydir
 azureuser@test-hpl:~$ ls
 mydir
 azureuser@test-hpl:~$ cd mydir/
@@ -178,7 +178,7 @@ azureuser@test-hpl:~$ ls
 azureuser@test-hpl:~$ 
 </code></pre></div>
 <p>Ceate and view text files:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~$ echo &quot;this is my first file&quot; &gt; myfile
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~$ echo &quot;this is my first file&quot; &gt; myfile
 azureuser@test-hpl:~$ ls
 myfile
 azureuser@test-hpl:~$ cat myfile 
@@ -191,7 +191,7 @@ this is my first file
 <p>What is <code>cat</code> then? Try <code>man</code> or <code>--help</code>.</p>
 
 <p>Move/Copy/Remove file:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~$ ls
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~$ ls
 myfile
 azureuser@test-hpl:~$ cat myfile 
 this is my first file
@@ -251,7 +251,7 @@ Verify it is same as the file you created remotely.</li>
 <p><img src="filezilla_connected.png" alt=""></p>
 
 <h3>File download from the Internet</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~$ mkdir try-wget
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~$ mkdir try-wget
 azureuser@test-hpl:~$ cd try-wget/
 azureuser@test-hpl:~/try-wget$ wget &#39;https://github.com/hupili/agile-ir/raw/master/data/Shakespeare.tar.gz&#39;
 --2014-01-14 03:02:09--  https://github.com/hupili/agile-ir/raw/master/data/Shakespeare.tar.gz
@@ -264,7 +264,7 @@ Shakespeare.tar.gz
 </code></pre></div>
 <p>Now you have downloaded Shakespeare&#39;s works, all in one compressed archive <code>Shakespeare.tar.gz</code>.
 Following is a shortcut to uncompress it:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~/try-wget$ tar -xzvf Shakespeare.tar.gz 
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~/try-wget$ tar -xzvf Shakespeare.tar.gz 
 data/
 data/sonnet-59.txt
 data/sonnet-139.txt
@@ -305,7 +305,7 @@ Most Linux distribution has <code>wget</code> and/or <code>curl</code> by defaul
 
 <p>Suppose you have finished processing <code>data</code>.
 Cleanup as follows:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~/try-wget$ ls
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~/try-wget$ ls
 data  Shakespeare.tar.gz
 azureuser@test-hpl:~/try-wget$ ls data/
 play-12night.txt         play-titus.txt              sonnet-122.txt  sonnet-152.txt  sonnet-42.txt  sonnet-72.txt
@@ -324,7 +324,7 @@ Use with great care.</p>
 <h3>Execute an executable file</h3>
 
 <p>Write your first shell script</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~$ cat &gt; hello.sh
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~$ cat &gt; hello.sh
 echo &quot;hello world. My first shell script!&quot;
 azureuser@test-hpl:~$ ls
 hello.sh
@@ -340,7 +340,7 @@ Try this way to create more files.
 This is the simplest way to write small text files without using a text-based editor.</p>
 
 <p>Make it executable:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~$ ls -l hello.sh 
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~$ ls -l hello.sh 
 -rw-rw-r-- 1 azureuser azureuser 43 Jan 14 07:26 hello.sh
 azureuser@test-hpl:~$ chmod a+x hello.sh 
 azureuser@test-hpl:~$ ls -l hello.sh 
@@ -350,7 +350,7 @@ azureuser@test-hpl:~$ ls -l hello.sh
 Read <a href="http://en.wikipedia.org/wiki/File_system_permissions">more</a>.</p>
 
 <p>Execute it:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~$ ./hello.sh 
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~$ ./hello.sh 
 hello world. My first shell script!
 azureuser@test-hpl:~$ /home/azureuser/hello.sh 
 hello world. My first shell script!
@@ -364,13 +364,13 @@ Or else, the system will try to locate that command in <a href="http://en.wikipe
 
 <p>The commands you use, e.g. <code>ls</code>, <code>cd</code>, <code>mkdir</code>, are just some pre-installed executables in the system.
 You can find their location and verify that they are executable:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~$ which ls
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~$ which ls
 /bin/ls
 azureuser@test-hpl:~$ ls -l /bin/ls
 -rwxr-xr-x 1 root root 105840 Nov 19  2012 /bin/ls
 </code></pre></div>
 <p><code>which</code> itself is an executable file:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~$ which which 
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~$ which which 
 /usr/bin/which
 azureuser@test-hpl:~$ ls -l /usr/bin/which
 lrwxrwxrwx 1 root root 10 Mar 29  2012 /usr/bin/which -&gt; /bin/which
@@ -380,14 +380,14 @@ azureuser@test-hpl:~$ ls -l /bin/which
 <h3>Automate your work by shell</h3>
 
 <p>Create a script, <code>download.sh</code> , with the following content. </p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span></span><span class="c1"># Clean previously downloaded data</span>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Clean previously downloaded data</span>
 rm -f Shakespeare.tar.gz
 rm -rf data/
-<span class="c1"># Download</span>
+<span class="c"># Download</span>
 wget <span class="s1">&#39;https://github.com/hupili/agile-ir/raw/master/data/Shakespeare.tar.gz&#39;</span>
-<span class="c1"># Uncompress </span>
+<span class="c"># Uncompress </span>
 tar -xzvf Shakespeare.tar.gz 
-<span class="c1"># list files</span>
+<span class="c"># list files</span>
 ls data/
 </code></pre></div>
 <p><strong>TIP</strong>:
@@ -398,7 +398,7 @@ The paste operations are different across terminals.</p>
 <p>Content after <code>#</code> is comment.</p>
 
 <p>Now execute the script:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~$ chmod a+x download.sh 
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~$ chmod a+x download.sh 
 azureuser@test-hpl:~$ ./download.sh 
 
 ...
@@ -455,7 +455,7 @@ Pick one that is most convenient to you.</p>
 
 <p>Ubuntu will friendly prompt you for package installation.
 e.g. installing <a href="http://git-scm.com/">Git</a></p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>azureuser@test-hpl:~$ git
+<div class="highlight"><pre><code class="language-text" data-lang="text">azureuser@test-hpl:~$ git
 The program &#39;git&#39; is currently not installed.  You can install it by typing:
 sudo apt-get install git
 azureuser@test-hpl:~$ sudo apt-get install git
@@ -518,7 +518,7 @@ You can get some pointers from those repos.</p>
       modified by <a href="https://home.ie.cuhk.edu.hk/~hlxu">Huanle Xu</a>
     </p>
     <p>
-      <small>Site last compiled at: 2018-09-21 10:42:50 +0800</small>
+      <small>Site last compiled at: 2018-09-27 23:24:51 +0800</small>
     </p>
   </footer>
 
