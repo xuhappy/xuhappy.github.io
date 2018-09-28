@@ -99,14 +99,14 @@
 <p>1). Sun Java 7:</p>
 
 <p>Hadoop 2.7.1 requires a working Java 1.7+ (aka Java 7) installation. We will install Java 7 in this tutorial.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ubuntu@master:~$ sudo apt-get update
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>ubuntu@master:~$ sudo apt-get update
 ubuntu@master:~$ sudo apt-get install openjdk-7-jre-headless
 ubuntu@master:~$ sudo apt-get install openjdk-7-jdk
 </code></pre></div>
 <p>Notes:Other methods to install java on Linux.<a href="http://www.wikihow.com/Install-Java-on-Linux">link</a></p>
 
 <p>After installation, make a quick check whether JDK is correctly set up:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ubuntu@master:~$ java -version
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>ubuntu@master:~$ java -version
 java version &quot;1.7.0_111&quot;
 OpenJDK Runtime Environment (IcedTea 2.6.3) (7u91-2.6.3-0ubuntu0.14.04.1)
 OpenJDK 64-Bit Server VM (build 24.91-b01, mixed mode)
@@ -114,7 +114,7 @@ OpenJDK 64-Bit Server VM (build 24.91-b01, mixed mode)
 <p>2). Create an User Account for Hadoop:</p>
 
 <p>We do not want to run Hadoop as the root. So we will create a new user/group for hadoop related jobs. </p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ubuntu@master:~$ sudo addgroup hadoop
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>ubuntu@master:~$ sudo addgroup hadoop
 Adding group `hadoop&#39; (GID 1001) ...
 Done.
 ubuntu@master:~$ sudo adduser --ingroup hadoop hduser
@@ -122,16 +122,16 @@ ubuntu@master:~$ sudo adduser --ingroup hadoop hduser
 <p>3). Install SSH:</p>
 
 <p>SSH (“Secure SHell”) is a protocol for securely accessing one machine from another. Hadoop uses SSH for accessing another slaves nodes to start and manage all HDFS and MapReduce daemons. SSH server should has been already installed. Otherwise, install SSH server by:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ubuntu@master:~$ sudo apt-get install openssh-server
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>ubuntu@master:~$ sudo apt-get install openssh-server
 </code></pre></div>
 <p>Now we login as <code>hduser</code> and the rest of the tutorial will act as <code>hduser</code>, if not specified explicitly.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ubuntu@master:~$ su hduser
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>ubuntu@master:~$ su hduser
 
 #Go to home directory of hduser
 hduser@master:/home/ubuntu$ cd ~
 </code></pre></div>
 <p>Generate SSH key pairs for hduser.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">#Use empty passphrase
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>#Use empty passphrase
 hduser@master:~$ ssh-keygen -t rsa -f id_rsa
 hduser@master:~$ mkdir .ssh
 hduser@master:~$ mv id_rsa* .ssh/
@@ -150,7 +150,7 @@ Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-74-generic x86_64)
 <p>4). Disable IPv6:</p>
 
 <p>Hadoop does not support IPv6, we need to disable it. Change the configuration file as <code>root</code></p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ubuntu@master:~$ sudo vim /etc/sysctl.conf 
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>ubuntu@master:~$ sudo vim /etc/sysctl.conf 
 
 #Append the following lines at the end of the file
 net.ipv6.conf.all.disable_ipv6 = 1
@@ -160,16 +160,16 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 <p><strong>Install Hadoop</strong></p>
 
 <p>1). Download and extract the Hadoop package</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">hduser@master:~$ wget http://ftp.cuhk.edu.hk/pub/packages/apache.org/hadoop/common/hadoop-2.7.1/hadoop-2.7.1.tar.gz
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ wget http://ftp.cuhk.edu.hk/pub/packages/apache.org/hadoop/common/hadoop-2.7.1/hadoop-2.7.1.tar.gz
 hduser@master:~$ tar -zxvf hadoop-2.7.1.tar.gz
 </code></pre></div>
 <p>2). Configurations</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">#Create directories for Namenode and Datanode
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>#Create directories for Namenode and Datanode
 hduser@master:~$ mkdir -p hadoop_tmp/hdfs/namenode
 hduser@master:~$ mkdir -p hadoop_tmp/hdfs/datanode
 </code></pre></div>
 <p>Update Environment variables</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">#Configuration file : hadoop-env.sh
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>#Configuration file : hadoop-env.sh
 hduser@master:~$ vim hadoop-2.7.1/etc/hadoop/hadoop-env.sh
 
 #Modify JAVA_HOME to be
@@ -196,7 +196,7 @@ export HADOOP_OPTS=&quot;-Djava.library.path=$HADOOP_HOME/lib&quot;
 source ~/.bashrc
 </code></pre></div>
 <p>Update Hadoop configuration files</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">#Configuration file : core-site.xml
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>#Configuration file : core-site.xml
 hduser@master:~$ vim hadoop-2.7.1/etc/hadoop/core-site.xml 
 
 #Add those lines in the configuration section
@@ -249,10 +249,10 @@ hduser@master:~$ vim hadoop-2.7.1/etc/hadoop/mapred-site.xml
 &lt;/property&gt;
 </code></pre></div>
 <p>3). Format namenode</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">hduser@master:~$ hdfs namenode -format
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ hdfs namenode -format
 </code></pre></div>
 <p>4). Start Hadoop</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">#Start Hadoop File System
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>#Start Hadoop File System
 hduser@master:~$ start-dfs.sh
 
 #Start MapReduce
@@ -282,16 +282,16 @@ hduser@master:~$ jps
 <p><strong>Word Count</strong></p>
 
 <p>We will now run your first Hadoop MapReduce job. We will use the WordCount example job which reads text files and counts how often words occur. The input is text files and the output is text files, each line of which contains a word and the count of how often it occurred, separated by a tab.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">hduser@master:~$ wget &#39;https://github.com/hupili/agile-ir/raw/master/data/Shakespeare.tar.gz&#39;
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ wget &#39;https://github.com/hupili/agile-ir/raw/master/data/Shakespeare.tar.gz&#39;
 hduser@master:~$ tar -zxvf Shakespeare.tar.gz
 </code></pre></div>
 <p>Use <code>-copyFromLocal</code> to upload the file into Hadoop File System</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">hduser@master:~$ hadoop dfs -copyFromLocal /home/hduser/data /data
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ hadoop dfs -copyFromLocal /home/hduser/data /data
 hduser@master:~$ hadoop dfs -ls /data
 </code></pre></div>
 <p>Use <code>hadoop dfs -help</code> to check all the commands available in the Hadoop File System.
 Hadoop comes with several sample MapReduce job, and wordcount is one of them.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">hduser@master:~$ cp hadoop-2.7.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.1.jar ./
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ cp hadoop-2.7.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.1.jar ./
 hduser@master:~$ hadoop jar hadoop-mapreduce-examples-2.7.1.jar wordcount /data /result
 </code></pre></div>
 <p><code>/data</code> is the input directory and <code>/result</code> is the output directory. Both of them refer to Hadoop File System.</p>
@@ -301,7 +301,7 @@ hduser@master:~$ hadoop jar hadoop-mapreduce-examples-2.7.1.jar wordcount /data 
 <p><strong>Small files Problem in MapReduce</strong>:Map tasks usually process a block of input at a time (using the default FileInputFormat). If the file is very small and there are a lot of them, then each map task processes very little input, and there are a lot more map tasks, each of which imposes extra bookkeeping overhead. </p>
 
 <p>You can also kill a job while it&#39;s running.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">hduser@master:~$ hadoop job -list
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ hadoop job -list
 DEPRECATED: Use of this script to execute mapred command is deprecated.
 Instead use the mapred command for it.
 
@@ -320,7 +320,7 @@ Instead use the mapred command for it.
 Killed job job_1453881549433_0001
 </code></pre></div>
 <p>Now how about merge all the files into a large file?</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">hduser@master:~$ cat data/* &gt; largefile
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ cat data/* &gt; largefile
 hduser@master:~$ hadoop dfs -copyFromLocal largefile /largefile 
 DEPRECATED: Use of this script to execute hdfs command is deprecated.
 Instead use the hdfs command for it.
@@ -395,7 +395,7 @@ Creative Commons Attribution 4.0 International License</a>.
       modified by <a href="https://home.ie.cuhk.edu.hk/~hlxu">Huanle Xu</a>
     </p>
     <p>
-      <small>Site last compiled at: 2018-09-27 23:24:51 +0800</small>
+      <small>Site last compiled at: 2018-09-28 12:47:21 +0800</small>
     </p>
   </footer>
 

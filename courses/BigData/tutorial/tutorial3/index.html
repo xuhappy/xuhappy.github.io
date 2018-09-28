@@ -106,7 +106,7 @@ takes input key-value pairs from STDIN; output key-value pairs to STDOUT.</li>
 <h2>Run with Hadoop Streaming</h2>
 
 <p>The command format is as follows:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">hduser@master:~$ hadoop jar hadoop-streaming-2.7.1.jar \
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ hadoop jar hadoop-streaming-2.7.1.jar \
     -input myInputDirs \
     -output myOutputDir \
     -mapper java_class_or_executable \
@@ -124,7 +124,7 @@ takes input key-value pairs from STDIN; output key-value pairs to STDOUT.</li>
 <p>This time, instead of running word count with <code>hadoop-mapreduce-examples.jar</code>(under <code>/usr/hdp/current/hadoop-mapreduce-client/hadoop-mapreduce-examples.jar</code>), we are going to write the mapper and recuder, and run it with <code>hadoop-streaming.jar</code>.</p>
 
 <p>In this tutorial we will use Python. Fisrt of all, we design our mapper as (<code>mapper.py</code>):</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">#!/usr/bin/env python
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>#!/usr/bin/env python
 
 import sys
 
@@ -133,7 +133,7 @@ for line in sys.stdin:
         print &#39;%s\t%s&#39; % (word, 1)
 </code></pre></div>
 <p>Write the reducer as (<code>reducer.py</code>):</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">#!/usr/bin/env python
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>#!/usr/bin/env python
 
 import sys
 
@@ -157,17 +157,17 @@ for line in sys.stdin:
 print &#39;%s\t%s&#39; % (cur_key, cur_count)
 </code></pre></div>
 <p>Run it with Hadoop Streaming:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">hduser@master:~$ hadoop jar hadoop-streaming-2.7.1.jar -file mapper.py -mapper mapper.py -file reducer.py -reducer reducer.py -input /largefile -output /result
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ hadoop jar hadoop-streaming-2.7.1.jar -file mapper.py -mapper mapper.py -file reducer.py -reducer reducer.py -input /largefile -output /result
 </code></pre></div>
 <h2>The most frequent words</h2>
 
 <p>Following up the previous word count example, how can we get the most frequent words using MapReduce? Check the reducer output in the previous job. </p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">hduser@master:~$ hadoop dfs -cat /result/part-00000 | head -n 5
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ hadoop dfs -cat /result/part-00000 | head -n 5
 </code></pre></div>
 <h3>Option 1</h3>
 
 <p>We know Hadoop will sort the intermediate results by the key. Let&#39;s leverage this property and design our mapper as (<code>swap.py</code>):</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">#!/usr/bin/env python
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>#!/usr/bin/env python
 
 import sys
 
@@ -178,17 +178,17 @@ for line in sys.stdin:
 <p>Notes: By default, shuffling stage performs a string sorting, not integer sorting. We played a trick, <code>%07d</code>, to pad leading zeros, so that string sorting and integer sorting are equivalent in this case.</p>
 
 <p>We don&#39;t need a reducer in this case. Run with Hadoop Streaming:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">hduser@master:~$ hadoop jar hadoop-streaming-2.7.1.jar -mapper swap.py -file swap.py -input /result -output /result_sorted
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ hadoop jar hadoop-streaming-2.7.1.jar -mapper swap.py -file swap.py -input /result -output /result_sorted
 </code></pre></div>
 <p>Check the output:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">hduser@master:~$ hadoop dfs -cat /result_sorted/part-00000 | tail -n 5
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ hadoop dfs -cat /result_sorted/part-00000 | tail -n 5
 </code></pre></div>
 <p><strong>Caution</strong>: <code>hadoop dfs -cat</code> can cause a lot network traffic in practice if you have a really large data set. Don&#39;t use <code>-cat</code> in real works and homeworks (just add a reducer if necessary).</p>
 
 <h3>Option 2</h3>
 
 <p>There are many parameters you can specify in the command line argument. Try the following command:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">hduser@master:~$ hadoop jar hadoop-streaming-2.7.1.jar \
+<div class="highlight"><pre><code class="language-text" data-lang="text"><span></span>hduser@master:~$ hadoop jar hadoop-streaming-2.7.1.jar \
     -D stream.num.map.output.key.fields=2 \
     -D mapred.output.key.comparator.class=org.apache.hadoop.mapred.lib.KeyFieldBasedComparator \
     -D mapred.text.key.comparator.options=-k2,2nr \
@@ -263,7 +263,7 @@ Creative Commons Attribution 4.0 International License</a>.
       modified by <a href="https://home.ie.cuhk.edu.hk/~hlxu">Huanle Xu</a>
     </p>
     <p>
-      <small>Site last compiled at: 2018-09-27 23:24:51 +0800</small>
+      <small>Site last compiled at: 2018-09-28 12:47:21 +0800</small>
     </p>
   </footer>
 

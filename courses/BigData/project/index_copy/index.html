@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>Project</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
+  <link href="/courses/BigData/assets/css/style.css" rel="stylesheet" />
+  <link href="/courses/BigData/assets/css/colors.css" rel="stylesheet" />
+  <link href="/courses/BigData/assets/css/pygments_style.css" rel="stylesheet" />
+  <link href="/courses/BigData/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="/courses/BigData/assets/js/jquery.qrcode.min.js"></script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$']],
+  processEscapes: true
+  }
+  });
+  </script>
+  <script type="text/javascript"
+  src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript" src="/courses/BigData/assets/js/jq_mathjax_parse.js"></script>
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--<style>html{background: url(/courses/BigData/assets/img/background.png) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}</style>-->
+
+</head>
+
+<!--<body style="background-image:url('/courses/BigData/assets/img/background.png');">-->
+
+
+
+<body>
+
+  <header id="header" >
+    <h1>
+        
+        <br>
+        Big Data Analytics
+    </h1>
+    <h4>(Offered in 2018 Fall)</h4>
+    <hr>
+  </header>
+
+
+  <div id="page">
+
+    <div id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="/courses/BigData/"><i class="fa fa-home fa-fw"></i> Home</a></li>
+          <!-- <li><a href="/courses/BigData/"><i class="fa fa-bullhorn fa-fw"></i> News</a></li> -->
+          <li><a href="/courses/BigData/lecture/"><i class="fa fa-book fa-fw"></i> Lecture</a></li>
+          <li><a href="/courses/BigData/tutorial/"><i class="fa fa-book fa-fw"></i> Tutorial</a></li>
+		  <li><a href="/courses/BigData/project/"><i class="fa fa-book fa-fw"></i> Project</a></li>
+          <li><a href="/courses/BigData/homework"><i class="fa fa-pencil fa-fw"></i> Homework</a></li>
+          <li><a href="/courses/BigData/reference"><i class="fa fa-tag fa-fw"></i> Reference</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div id="main">
+    <div id="content">
+      <h1>~ Project ~
+      </h1>
+      <div>
+        <p id="feed" style="display:block; text-align:right">
+          <a href="/courses/BigData/feed.xml"><i class="fa fa-rss fa-fw"></i>Feed</a>
+        </p>
+      </div>
+      <br>
+      <div>
+        <ul>
+<li><p><a href="ProjectGuidelines.pdf">Project Guideline</a></p></li>
+<li><p><a href="https://docs.google.com/spreadsheets/d/1ccMWcVzsBEH7hMz6ezgwBeDnkfMkv6CnHA4Ci-NdLmI/edit">Project Sign-Up Sheet (Open at 11:30am Oct. 14)</a></p></li>
+</ul>
+
+<p>Below are the recommended topics and some related resources/papers.</p>
+
+<p>--</p>
+
+<h3>1.Scheduling and Resource allocation in Big Data Systems</h3>
+
+<ul>
+<li>R. Grandl et al., &quot;Altruistic Scheduling in Multi-Resource Clusters&quot;, OSDI 2016.</li>
+<li>R. Grandl et al., &quot;Packing and Dependency-Aware Scheduling for Data-Parallel Clusters&quot;, OSDI 2016.</li>
+<li>I. Gog et al., &quot;Firmament: Fast, Centralized Cluster Scheduling at Scale&quot;, OSDI 2016.</li>
+<li>J. Jiang et al., &quot;Symbiosis: Network-Aware Task Scheduling in Data-Parallel Frameworks&quot;, Infocom 2016.</li>
+<li>P. Delgado et al, &quot;Job-Aware Scheduling in Eagle: Divide and Stick to Your Probes,&quot; ACM SoCC 2016.</li>
+<li>Y. Yang et al, &quot;TR-Spark: Transient Computing for Big Data Analytics,&quot; ACM SoCC 2016.</li>
+</ul>
+
+<h3>2. Wide-area/Geo-distributed Big Data Analytics</h3>
+
+<ul>
+<li>K. Kloudas et al., &quot;Pixida: Optimizing Data Parallel Jobs in Wide-Area Data Analytics&quot;, VLDB 2015.</li>
+<li>Vulimiri et al., &quot;Global Analytics in the Face of Bandwidth and Regulatory Constraints&quot;,  NSDI, 2015.</li>
+<li>Vulimiri et al., &quot;WANalytics: Analytics for a geo-distributed data-intensive world&quot;, CIDR, 2015.</li>
+<li>Pu et al., &quot;Low-Latency Analytics of Geo-Distributed Data in the Wide Area&quot;, SIGCOMM, 2015.</li>
+<li>Viswanathan et al., &quot;Clarinet: WAN-Aware Optimization for Analytics Queries&quot;, OSDI, 2016.</li>
+</ul>
+
+<h3>3. Distributed Systems for Deep Learning</h3>
+
+<ul>
+<li>Chilimbi et al., &quot;Project Adam: Building an Efficient and Scalable Deep Learning Training System&quot;, OSDI, 2014.</li>
+<li>Martin Abadi et al, &quot;TensorFlow: A System for Large-Scale Machine Learning&quot;,  OSDI 2016.</li>
+<li>Tim Hunter, &quot;TensorFrames -- Google TensorFlow on Apache Spark&quot;, Spark Meetup, June 2016.</li>
+<li>Caffee-on-Spark: <a href="http://yahoohadoop.tumblr.com/post/139916563586/caffeonspark-open-sourced-for-distributed-deep">http://yahoohadoop.tumblr.com/post/139916563586/caffeonspark-open-sourced-for-distributed-deep</a>.</li>
+<li>Distributed (Deep) Machine Learning Community (DMLC),  <a href="https://github.com/dmlc">https://github.com/dmlc</a></li>
+<li>MXNet: Flexible and Efficient Library for Deep Learning, <a href="https://github.com/dmlc/mxnet">https://github.com/dmlc/mxnet</a></li>
+<li>Deeplearning4J.org, &quot;Running Deep Learning on Distributed GPUs with Spark,&quot; <a href="http://deeplearning4j.org/spark-gpus">http://deeplearning4j.org/spark-gpus</a></li>
+<li>Alex Chen et al, &quot;Distributed Neural Networks with GPUs in the AWS Cloud&quot;, <a href="http://techblog.netflix.com/2014/02/distributed-neural-networks-with-gpus.html">http://techblog.netflix.com/2014/02/distributed-neural-networks-with-gpus.html</a>. </li>
+</ul>
+
+<h3>4. Distributed Machine Learning Platforms</h3>
+
+<ul>
+<li>F. Niu et al., &quot;Hogwild: A lock-free approach to parallelizing stochastic gradient descent,&quot; NIPS 2011.</li>
+<li>J. Dean et al, &quot;Large scale distributed deep networks,&quot; NIPS 2012.</li>
+<li>Li et al., &quot;Scaling Distributed Machine Learning with the Parameter Server&quot;, OSDI, 2014.</li>
+<li>Li et al., &quot;Communication Efficient Distributed Machine Learning with the Parameter Server&quot;, NIPS 2014. </li>
+<li>Eric P. Xing et al., &quot;Petuum: A new platform for Distributed Machine Learning on Big Data&quot;, IEEE Transactions on Big Data, 2015.</li>
+<li>T. Chen et al., &quot;MXNet: A Flexible and Efficient Machine Learning Library for Heterogeneous Distributed Systems&quot;, NIPS Workshop on Machine Learning Systems (LearnSys), 2015.</li>
+<li>MXNet: Flexible and Efficient Library for Deep Learning, <a href="https://github.com/dmlc/mxnet">https://github.com/dmlc/mxnet</a></li>
+<li>Gonzalez J. E. et al., &quot;Asynchronous Complex Analytics in a Distributed Dataflow Architecture&quot;, arXiv preprint arXiv:1510.07092 (2015).</li>
+<li>X. Pan et al, &quot;Cyclades: Conflict-free Asynchronous Machine Learning,&quot; NIPS 2016.</li>
+</ul>
+
+<h3>5. Stateful Dataflow</h3>
+
+<ul>
+<li>D. Murray, &quot;Incremental., iterative data processing with timely dataflow&quot;, Communications of ACM 2016.</li>
+<li>Murray et al., &quot;Naiad: A Timely Dataflow System&quot;, SOSP, 2013.</li>
+<li>P. Pietzuch et al., &quot;Stateful Distributed Dataflow Graphs&quot;, </li>
+<li>R. C. Fernandez et al., &quot;Making state explicit for imperative big data processing&quot;. In USENIX ATC, 2014. </li>
+<li>R. C. Fernandez et al., &quot;Integrating scale out and fault tolerance in stream processing using operator state management&quot;. ACM SIGMOD 2013. </li>
+</ul>
+
+<h3>6. Stream Analytics</h3>
+
+<ul>
+<li>Lin et al., &quot;StreamScope: Continuous Reliable Distributed Processing of Big Data Streams&quot;, NSDI, 2016.</li>
+<li>Kulkarni et al., &quot;Twitter Heron: Stream Processing at Scale&quot;, SIGMOD, 2015.</li>
+<li>Toshniwal et al., &quot;Storm @Twitter&quot;, SIGMOD, 2014.</li>
+<li>Rabkin et al., &quot;Aggregation and Degradation in JetStream: Streaming analytics in the wide area&quot;, NSDI, 2014.</li>
+<li>T. Condie, et al., &quot;MapReduce Online,&quot;, NSDI 2010.</li>
+<li>A. Alexandrov et al., &quot;The Stratosphere platform for Big Data Analytics&quot;, VLDB 2014.</li>
+<li>R. C. Fernandez et al., &quot;Integrating Scale Out and Fault Tolerance in Stream Processing using Operator State Management&quot;. In SIGMOD, 2013.</li>
+</ul>
+
+<h3>7. SQL-based Big Data Systems</h3>
+
+<ul>
+<li>A. Floratou et al., &quot;SQL-on-Hadoop: Full Circle Back to Shared-Nothing Database Architectures&quot;, VLDB 2014.</li>
+<li>Kornacker et al., &quot;Impala: A Modern, Open-Source SQL Engine for Hadoop&quot;, CIDR 2015.</li>
+<li>Huai et al., &quot;Major technical advancements in Apache Hive&quot;, SIGMOD, 2014.</li>
+<li>Armburst et al., &quot;Spark SQL: Relational Data Processing in Spark&quot;, SIGMOD, 2015</li>
+<li>L. Chang, &quot;Presto: Interacting with petabytes of data at Facebook&quot;, blog by L.Chang, 2013.</li>
+<li>W. Alkowaileet et al., &quot;Large-scale Complex Analytics on Semi-structured Datasets using AsterixDB and Spark&quot;, VLDB 2016.</li>
+<li>A. Alexandrov et al., &quot;Emma in Action: Declarative Dataflows for Scalable Data Analysis&quot;, SIGMOD 2016.</li>
+</ul>
+
+<h3>8. Systems for Big Graph Analytics</h3>
+
+<ul>
+<li>Carlos H.C. Teixeira et al., &quot;Arabesque: A system for distributed graph mining&quot;, SOSP 2015.</li>
+<li>Amitabha Roy et al., &quot;Chaos: Scale-out Graph Processing from Secondary Storage&quot;, SOSP 2015. </li>
+<li>Anessh Sharma et al., &quot;GraphJet: Real-Time Content Recommendations at Twitter&quot;, VLDB 2016. </li>
+<li>D. Yan et al., &quot;Big Graph Analytics Systems&quot;, SIGMOD 2016</li>
+<li>D. Yan et al., &quot;A General-Purpose Query-Centric Framework for Querying Big Graphs&quot;, VLDB 2016.</li>
+</ul>
+
+<h3>9. Approximation Query</h3>
+
+<ul>
+<li>S. Agarwal et al., &quot;BlinkDB: Queries with Bounded Errors and Bounded Response Times on Very Large Data&quot;, Eurosys, 2013.</li>
+<li>S. Agarwal et al., &quot;Knowing when you&#39;re wrong: building fast and reliable approximate query processing systems,&quot; SIGMOD 2014.</li>
+<li>S. Agarwal et al., &quot;Succinct: Enabling Queries on Compressed Data&quot;, NSDI, 2015.</li>
+<li>G. Ananthanarayanan, et al. &quot;GRASS: trimming stragglers in approximation analytics,&quot; NSDI 2014.</li>
+</ul>
+
+<h3>10. Monitoring and Diagnosis in Data Center Scaling Computing</h3>
+
+<ul>
+<li>Mace et al., &quot;Pivot Tracing: Dynamic Causal Monitoring for Distributed Systems&quot;,SOSP, 2015.</li>
+<li>M. Moshref et al., &quot;Trumpet: Timely and Precise Triggers in Data Centers&quot;, Sigcomm 2016.</li>
+<li>R. Sambasivan et al, &quot;Principled workflow-centric tracing of distributed systems,&quot; ACM SoCC 2016.</li>
+<li>M. Leich &quot;Runtime Analysis of Distributed Data Processing Programs,&quot; VLDB 2014.</li>
+<li>E, Coppa et al., &quot;On Data Skewness, Stragglers and MapReduce Progress Indicators,&quot; ACM SoCC 2015.</li>
+</ul>
+
+<h3>11. Matrix Computations on Distributed Cluster</h3>
+
+<ul>
+<li>R. B. Zadeh et al., &quot;Matrix Computations and Optimization in Apache Spark&quot;, KDD 2016.</li>
+<li>A. Elgohary et al., &quot;Compressed Linear Algebra for Large-scale Machine Learning&quot;, VLDB 2016.</li>
+<li>M. Li et al., &quot;Cuckoo Linear Algebra&quot;, KDD 2015.</li>
+</ul>
+
+<h3>12. Management for Data-Center Networks</h3>
+
+<ul>
+<li>A. Singh et al, &quot;Jupiter Rising: A Decade of Clos Topologies and Centralized Control in Google&#39;s Datacenter Network,&quot; SIGCOMM 2015.</li>
+<li>R. Govindan et al., &quot;Evolve or Die: High-Availabiity Design Principles Drawn from Google’s Network Infrastructure&quot;, SIGCOMM 2016.</li>
+<li>Y. W. Sung et al., &quot;Robotron: Top-down Network Management at Facebook Scale&quot;, SIGCOMM 2016.</li>
+<li>Chow, Michael, et al. &quot;The Mystery Machine: End-to-end performance analysis of large­scale Internet service,&quot; OSDI 2014.</li>
+</ul>
+
+<h3>13. Traffic Flow Scheduling for Data Center Networks</h3>
+
+<ul>
+<li>M. Chowdhury, I. Stoica, &quot;Managing data transfers in computer clusters with orchestra&quot;, SIGCOMM 2011.</li>
+<li>M. Chowdhury, I. Stoica, &quot;Efficient coflow scheduling with Varys&quot;, SIGCOMM 2014.</li>
+<li>F.R. Dogar et al., &quot;Decentralized Task-Aware Scheduling for Data Center Networks&quot;, SIGCOMM 2014.</li>
+<li>M. Chowdhury, I. Stoica, &quot;Efficient Coflow Scheduling Without Prior Knowledge&quot;. SIGCOMM 2015.</li>
+<li>Y. Zhao et al., &quot;RAPIER: Integrating Routing and Scheduling for Coflow-aware Data Center Networks&quot;, Infocom 2016.</li>
+<li>Y. Li et al., &quot;Efficient online coflow routing and scheduling&quot;, ACM Mobihoc 2016.</li>
+<li>H. Zhang et al., &quot;CODA: Toward Automatically Identifying and Scheduling COflows in the DArk&quot;, ACM SIGCOMM 2016.</li>
+<li>L. Chen et al., &quot;Scheduling Mix-flows in Commodity Datacenters with Karuna&quot;, ACM SIGCOMM 2016.</li>
+<li>P. Wang et al, &quot;Expeditus: Congestion-Aware Load Balancing in Clos Data Center Networks,&quot; ACM SoCC 2016.</li>
+</ul>
+
+<h3>14. Performance Prediction for Large-scale Analytics</h3>
+
+<ul>
+<li>S. Venkataraman et al., &quot;Ernest: Efficient Performance Prediction for Large-scale Advanced Analytics&quot;, NSDI 2016.</li>
+<li>K. Ousterhout, &quot;Re-architecting Spark for Performance Understandability&quot;, Spark Summit 2016 talk</li>
+<li>K. Ousterhout et al., &quot;Making Sense of Performance in Data Analytics Frameworks&quot;, NSDI 2015.</li>
+<li>D. Crankshaw et al, &quot;The missing piece in complex analytics: low latency, scalable model management and serving with Velox&quot;, CIDR 2015.</li>
+<li>N. J. Yadwadkar et al, &quot;Wrangler: Predictable and Faster Jobs using Fewer Resources&quot;, ACM SoCC 2014. </li>
+<li>E. Sparks et al, &quot;Automating model search for large-scale machine learning,&quot; ACM SoCC 2015.</li>
+<li>K. Rajan et al,&quot;PerfOrator: eloquent performance models for Resource Optimization,&quot; ACM SoCC 2016.</li>
+<li>N. J. Yadwadkar et al., &quot;Katz: Faster Jobs in Distributed Data Processing using Multi-Task Learning&quot;, SDM 2015.</li>
+</ul>
+
+<h3>15. VM/ Cloud Resource Management/Scheduling</h3>
+
+<ul>
+<li>W. Lang et al., &quot;Not for the Timid: On the impact of Aggressive Over-booking in the Cloud&quot;, VLDB 2016.</li>
+<li>C. Fuerst et al., &quot;Kraken: Online and Elastic Resource Reservations for Multi-tenant Datacenters&quot;, Infocom 2016.</li>
+<li>Z. Han et al., &quot;Dynamic Virtual Machine Management via Approximate Markov Decision Process&quot;, Infocom 2016.</li>
+<li>J. Mace et al., &quot;2DFQ: Two-dimensional Fair Queueing for Multi-Tenant Cloud Services&quot;, SIGCOMM 2016.</li>
+<li>J. Chaderi, &quot;Randomized Algorithms for Scheduling VMs in the Cloud&quot;, Infocom 2016.</li>
+</ul>
+
+<h3>16. Analyzing Dynamic/Time-evolving Graphs in Large-Computing Clusters</h3>
+
+<ul>
+<li>I. Stoica, &quot;Time-evolving Graph Processing on Commodity Clusters&quot;, Spark Summit 2016.</li>
+<li>A. P. Iyer et al. &quot;Time-evolving graph processing at scale.&quot; Proceedings of the Fourth International Workshop on Graph Data Management Experiences and Systems. ACM, 2016.</li>
+<li>Z. Y. Dong, &quot;A Framework for Computing on Large Dynamic Graphs&quot;, arXiv preprint arXiv:1512.01668 (2015).</li>
+</ul>
+
+<h3>17. Accelerator/GPU Spark Integration</h3>
+
+<ul>
+<li>Di Wu et al, &quot;Deploying Accelerators at DataCenter Scale using Spark,&quot; Spark Summit 2016.</li>
+<li>Y.Hu et al, &quot;GPU Support in Spark and GPU/CPU Mixed Resource Scheduling at Production Scale,&quot; Spark Summit 2016.</li>
+<li>Y.T. Chen et al, &quot;Apache Spark Meets FPGAs: A case study for Next Generation DNA Sequencying Acceleration,&quot; HotCloud 2016.</li>
+<li>M. Huang et al, &quot;Programming and Runtime Support to Blaze FPGA Accelerator Deployment at Datacenter Scale&quot;, ACM SoCC 2016.</li>
+</ul>
+
+<h3>18. Systems for In-memory Big Data Management and Processing</h3>
+
+<ul>
+<li>H. Zhang et al., &quot;In-memory big data management and processing: A survey&quot;, IEEE Transactions on Knowledge and Data Engineering 27.7 (2015): 1920-1948.</li>
+</ul>
+
+<h3>19. Machine Learning API/Toolkits for Large-scale Clusters</h3>
+
+<ul>
+<li>Kraska et al., &quot;MLbase: A Distributed Machine-learning System&quot;, CIDR, 2013.</li>
+<li>Sparks et al., &quot;MLI: An API for Distributed Machine Learning&quot;, ICDM, 2013.</li>
+<li>M. Boehm et al., SystemML: Declarative Machine Learning on Spark, VLDB 2016. </li>
+<li>Microsoft Distributed Machine Learning Toolkit (DMTK)  <a href="http://www.dmtk.io/index.html">http://www.dmtk.io/index.html</a>.</li>
+</ul>
+
+      </div>
+    </div>
+    </div>
+
+  
+
+
+  <footer id="footer">
+    <p class="copyright">Copyright &copy; 2018 Dongguan University-. Powered by <a href="http://jekyllrb.com">Jekyll</a>, original theme by <a href="http://www.webmaster-source.com">Matt Harzewski</a>,
+      modified by <a href="https://home.ie.cuhk.edu.hk/~hlxu">Huanle Xu</a>
+    </p>
+    <p>
+      <small>Site last compiled at: 2018-09-28 12:47:21 +0800</small>
+    </p>
+  </footer>
+
+<script>
+	//jQuery('#qrcode').qrcode("this plugin is great");
+	jQuery('#qrcode').qrcode({
+		//render	: "table",
+		text	: $(location).attr('href'),
+    width: 128,
+    height: 128
+	});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46660865-1', 'cuhk.edu.hk');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
