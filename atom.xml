@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2018-09-28T15:11:50+08:00</updated>
+  <updated>2018-09-28T21:55:00+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Auto-Tuning for cloud Resource]]></title>
+    <link href="http://xuhappy.github.io/blog/2018/09/28/auto-tuning-for-cloud-resource/"/>
+    <updated>2018-09-28T21:50:56+08:00</updated>
+    <id>http://xuhappy.github.io/blog/2018/09/28/auto-tuning-for-cloud-resource</id>
+    <content type="html"><![CDATA[<h3 id="an-interesting-research-direction">An interesting research direction</h3>
+<p>A bunch of applications, especially for those distributed machine learning jobs, can leverage this auto-tuning of resource configuration to achieved optimized performance. n</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Matrix Calculation]]></title>
