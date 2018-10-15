@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2018-10-09T18:43:31+08:00</updated>
+  <updated>2018-10-15T10:04:37+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Auto-Tuning for cloud Resource]]></title>
+    <title type="html"><![CDATA[Auto-Tuning for cloud Resource configuration]]></title>
     <link href="http://xuhappy.github.io/blog/2018/09/28/auto-tuning-for-cloud-resource/"/>
     <updated>2018-09-28T21:50:56+08:00</updated>
     <id>http://xuhappy.github.io/blog/2018/09/28/auto-tuning-for-cloud-resource</id>
