@@ -115,24 +115,25 @@ def main():
             place = place_a + place_b + place_c
             #print(ipc/5)
             vec.append(ipc/5)
-            place.append(ipc/5)
+            #place.append(ipc/5)
             data.append(vec)
             placement.append(place)
             num=0
     #处理icp与自由调度的比值，以及2个重要placement
-    ipc_imp1=data[imp1][-1]
-    ipc_imp2=data[imp2][-1]
+    # ipc_imp1=data[imp1][-1]
+    # ipc_imp2=data[imp2][-1]
     for index in range(len(data)):
         ipc_raito=data[index][-1]/data[-1][-1]
-        important1_ipc=ipc_imp1/data[-1][-1]
-        important2_ipc=ipc_imp2/data[-1][-1]
+        # important1_ipc=ipc_imp1/data[-1][-1]
+        # important2_ipc=ipc_imp2/data[-1][-1]
         del data[index][-1]
-        data[index].append(important1_ipc)
-        data[index].append(important2_ipc)
+        # data[index].append(important1_ipc)
+        # data[index].append(important2_ipc)
         data[index].append(ipc_raito)
         placement[index].append(ipc_raito)
-        print(placement[index])
+        # print(placement[index])
     data_train=np.array(data)
+
     
     f1 = open('./data/placementlog.txt','w')
     
@@ -144,8 +145,10 @@ def main():
     f1.close()
 
     placement_train=np.array(placement)
+    print(placement_train)
     np.save('./data/train2',data_train)
     np.save('./data/placement_train',placement_train)
+
     
 if __name__ == '__main__':
     main()
