@@ -76,9 +76,7 @@ def kvmipc(counters):
 
 def main():
     try:
-    
-        file = open(path, 'r') 
-    
+        file = open(path, 'r')
     except:
         print("open error")
   
@@ -146,7 +144,7 @@ def main():
 
     placement_train=np.array(placement)
     print(placement_train)
-    np.save('./data/train2',data_train)
+    # np.save('./data/train2',data_train)
     np.save('./data/placement_train',placement_train)
 
     
