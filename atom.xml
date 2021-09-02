@@ -4,7 +4,7 @@
   <title><![CDATA[My Blog]]></title>
   <link href="http://xuhappy.github.io/atom.xml" rel="self"/>
   <link href="http://xuhappy.github.io/"/>
-  <updated>2021-09-02T10:22:24+08:00</updated>
+  <updated>2021-09-02T10:58:49+08:00</updated>
   <id>http://xuhappy.github.io/</id>
   <author>
     <name><![CDATA[XU, Huanle]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Talk something about my research]]></title>
+    <link href="http://xuhappy.github.io/blog/2015/01/17/talk-something-about-my-research/"/>
+    <updated>2015-01-17T00:38:32+08:00</updated>
+    <id>http://xuhappy.github.io/blog/2015/01/17/talk-something-about-my-research</id>
+    <content type="html"><![CDATA[<p>I am a postgraduate student and therefore research plays a very important role in my current life. My research interests mainly include cloud computing, decentralised social network, graph algorithms and machine learning. </p>
+
+<p>My first research project is motivated from the simple and heuristic-based speculative execution approach under the MapReduce framework. Since the previous work lacks the theoretical understanding, I consider to tackle this issue from the perspective of system modelling. </p>
+
+<p>To begin with, I build a very simple model to characterize the tradeoff between the job completion time and resource consumption under the speculative execution scheme. In the first optimization problem, I only consider one single job which consists of multiple tasks that can run in parallel on multiple machines. Moreover, the optimization objective is to minimize the resource consumption while satisfy the job’s SLA requirement. </p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Matrix Calculation]]></title>
@@ -82,7 +95,7 @@ A X])}{\partial x} = (A X + X A)^T = X^T A^T + A^T X^T</script>
 where $A^{ \ast }$ 
 is the Adjugate matrix of $A$, hence, </p>
 
-<script type="math/tex; mode=display">|A| = tr(A A^{\ast})/n</script>
+<script type="math/tex; mode=display">|A| = tr(A A^{\ast})</script>
 
 <p>and </p>
 
